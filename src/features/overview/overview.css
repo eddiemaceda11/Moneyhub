@@ -1,0 +1,237 @@
+.overview-title {
+  /* border: 1px solid black; */
+  width: 100%;
+  max-width: 1060px;
+  height: 56px;
+  font-size: 32px;
+  line-height: 120%;
+  padding: 8px 0px;
+  text-align: left;
+  font-weight: var(--font-bold);
+}
+
+.overview-info-container {
+  width: 100%;
+  max-width: 1060px;
+  height: 119px;
+  display: flex;
+  gap: 24px;
+}
+
+.overview-info-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 11px;
+  width: 337.33px;
+  width: 33.33%;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: var(--color-p-white);
+  box-shadow: 0px 4px 24px 0 #d6d6d658;
+  overflow: hidden;
+}
+
+.overview-info-container div h4 {
+  font-size: 14px;
+  font-weight: var(--font-regular);
+  line-height: 150%;
+  text-align: left;
+}
+
+.overview-info-container div p {
+  font-size: 32px;
+  font-weight: var(--font-bold);
+  line-height: 120%;
+  text-align: left;
+}
+
+.additionals-section {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  max-width: 1060px;
+  min-height: 761px;
+}
+
+.additionals-section-left{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 608px;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+
+.additionals-section-right{
+  width: 428px;
+  height: 100%;
+  border: 1px solid blue;
+}
+
+/* POTS */
+.overview-section-pots {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  height: 218px;
+  padding: 32px;
+  background-color: var(--color-p-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 24px 0 #d6d6d658;
+  }
+
+.overview-pots-header {
+  display: flex;
+  justify-content: space-between;
+  height: 24px;
+}
+
+.overview-pots-header h3 {
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--color-grey-900);
+}
+
+.overview-pots-header p {
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-grey-900);
+}
+
+.overview-pots-info {
+  display: flex;
+  gap: 20px;
+  height: 110px;
+  /* width: 544px; */
+}
+
+.ov-pots-total-saved {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 247px;
+  padding: 16px;
+  background-color: var(--primary-bg-beige);
+  border-radius: 8px;
+}
+
+.ov-pots-total-saved img {
+  height: 24px;
+  width: 24px;
+}
+
+.opts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 70px;
+  width: 86px;
+}
+
+.opts-info p {
+  height: 21px;
+  width: 76px;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-grey-500);
+}
+
+.opts-info span {
+  height: 86px;
+  width: 38px;
+  font-size: 32px;
+  font-weight: var(--font-bold);
+  line-height: 120%;
+}
+
+.ov-pots-info-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 277px;
+  height: 102px;  
+}
+
+.opib-top, .opib-bottom {
+  display: flex;
+  height: 43px;
+  width: 277px;
+}
+
+.opib-top-right, .opib-bottom-right, .opib-top-left, .opib-bottom-left {
+  display: flex;
+  gap: 16px;
+  width: 130.5px;
+}
+
+.opib-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 90px;
+}
+
+.opib-border {
+  width: 4px;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.opib-border.one {
+  background-color: var(--color-dark-green);
+}
+
+.opib-border.two {
+  background-color: var(--color-cyan);
+}
+
+.opib-border.three {
+  background-color: var(--color-navy);
+}
+
+.opib-border.four {
+  background-color: var(--color-yellow);
+}
+
+.opib-top-right div p, .opib-bottom-right div p, .opib-top-left div p, .opib-bottom-left div p {
+ font-size: 12px;
+ font-weight: var(--font-regular);
+ color: var(--color-grey-500);
+ line-height: 150%;
+}
+
+.opib-top-right div span, .opib-bottom-right div span, .opib-top-left div span, .opib-bottom-left div span {
+  font-size: 14px;
+  font-weight: var(--font-bold);
+  color: var(--color-grey-900);
+  line-height: 150%;
+ }
+
+ /* TRANSACTIONS */
+ .overview-section-transaction {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 608px;
+  height: 519px;
+  padding: 32px;
+  background-color: var(--color-p-white);
+  border-radius: 8px;
+  box-shadow: 0px 4px 24px 0px #d6d6d658;
+ }
+
+ .overview-section-transaction header {
+  display: flex;
+  justify-content: space-between;
+  width: 544px;
+  height: 24px;
+ }
+
+ .overview-transactions-info {
+  border: 1px solid red;
+  width: 544px;
+  height: 399px;
+  gap: 20px
+ }
