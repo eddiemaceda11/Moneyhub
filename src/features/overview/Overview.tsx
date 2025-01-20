@@ -1,7 +1,9 @@
+import { useEffect, useState } from "react";
 import { useGetOverviewQuery } from "../../services/overviewApi";
 import "./overview.css";
+
 import { JarIcon } from "./JarIcon";
-import { useEffect, useState } from "react";
+import emmaImage from "../../assets/images/avatars/emma-richardson.jpg";
 
 export const Overview = () => {
   const [balance, setBalance] = useState({
@@ -121,11 +123,75 @@ export const Overview = () => {
               </div>
             </header>
             <div className="overview-transactions-info">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
+              <div>
+                <div className="oti-left">
+                  <img
+                    src={emmaImage}
+                    alt=""
+                  />
+                  <p>Emma Richardson</p>
+                </div>
+                <div className="oti-right">
+                  <p>+75.50</p>
+                  <span>19 Aug 2024</span>
+                </div>
+              </div>
+              <div className="oti-line"></div>
+              <div>
+                <div className="oti-left">
+                  <img
+                    src={emmaImage}
+                    alt=""
+                  />
+                  <p>Emma Richardson</p>
+                </div>
+                <div className="oti-right">
+                  <p>+75.50</p>
+                  <span>19 Aug 2024</span>
+                </div>
+              </div>
+              <div className="oti-line"></div>
+              <div>
+                <div className="oti-left">
+                  <img
+                    src={emmaImage}
+                    alt=""
+                  />
+                  <p>Emma Richardson</p>
+                </div>
+                <div className="oti-right">
+                  <p>+75.50</p>
+                  <span>19 Aug 2024</span>
+                </div>
+              </div>
+              <div className="oti-line"></div>
+              <div>
+                <div className="oti-left">
+                  <img
+                    src={emmaImage}
+                    alt=""
+                  />
+                  <p>Emma Richardson</p>
+                </div>
+                <div className="oti-right">
+                  <p>+75.50</p>
+                  <span>19 Aug 2024</span>
+                </div>
+              </div>
+              <div className="oti-line"></div>
+              <div>
+                <div className="oti-left">
+                  <img
+                    src={emmaImage}
+                    alt=""
+                  />
+                  <p>Emma Richardson</p>
+                </div>
+                <div className="oti-right">
+                  <p>+75.50</p>
+                  <span>19 Aug 2024</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
