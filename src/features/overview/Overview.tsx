@@ -1,23 +1,61 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useGetOverviewQuery } from "../../services/overviewApi";
 import "./overview.css";
 import { JarIcon } from "./JarIcon";
+import { useEffect, useState } from "react";
 
 export const Overview = () => {
+  const [balance, setBalance] = useState({
+    current: "",
+    expenses: "",
+    income: "",
+  });
+
+  const { data, error, isLoading } = useGetOverviewQuery(undefined);
+
+  useEffect(() => {
+    if (data) {
+      const formattedCurrent = formatCurrency(data.balance.current);
+      const formattedExpenses = formatCurrency(data.balance.expenses);
+      const formattedCurrency = formatCurrency(data.balance.income);
+
+      setBalance((prev) => ({
+        ...prev,
+        current: formattedCurrent,
+        expenses: formattedExpenses,
+        income: formattedCurrency,
+      }));
+    }
+  }, [data]);
+
+  if (isLoading) return <div>Loading...</div>;
+
+  if (error) {
+    return <div>Error fetching data</div>;
+  }
+
+  function formatCurrency(value: number) {
+    const formattedNumber = new Intl.NumberFormat("en-US", {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2,
+    }).format(value);
+    return formattedNumber;
+  }
+
   return (
     <>
       <h1 className="overview-title">Overview</h1>
       <div className="overview-info-container">
         <div>
           <h4>Current Balance</h4>
-          <p>$4,836.00</p>
+          <p>${balance.current}</p>
         </div>
         <div>
           <h4>Income</h4>
-          <p>$3,814,25</p>
+          <p>${balance.income}</p>
         </div>
         <div>
           <h4>Expenses</h4>
-          <p>$1,700.50</p>
+          <p>${balance.expenses}</p>
         </div>
       </div>
 
