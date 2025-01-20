@@ -1,9 +1,12 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const data = fetch("@/data.json");
-console.log(data);
+// const items = fetch("../../data.json")
+//   .then((res) => res.json())
+//   .then((data) => data);
 
-const initialState = data;
+// console.log(items);
+
+const initialState: any = [];
 
 const overviewSlice = createSlice({
   name: "overview",
