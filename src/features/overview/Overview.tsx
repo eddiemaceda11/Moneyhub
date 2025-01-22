@@ -203,7 +203,39 @@ export const Overview = () => {
               <h3>Budgets</h3>
               <p>See Details</p>
             </div>
-            <div className="osb-content"></div>
+            <div className="osb-content">
+              <div className="osbc-left"></div>
+              <div className="osbc-right">
+                <div className="osbc-category-div">
+                  <div className="osbc-category-left-border"></div>
+                  <div className="osbc-category-container">
+                    <div className="osbc-category">Entertainment</div>
+                    <div className="osbc-category-amount">$50.00</div>
+                  </div>
+                </div>
+                <div className="osbc-category-div">
+                  <div className="osbc-category-left-border"></div>
+                  <div className="osbc-category-container">
+                    <div className="osbc-category"></div>
+                    <div className="osbc-category-amount"></div>
+                  </div>
+                </div>
+                <div className="osbc-category-div">
+                  <div className="osbc-category-left-border"></div>
+                  <div className="osbc-category-container">
+                    <div className="osbc-category"></div>
+                    <div className="osbc-category-amount"></div>
+                  </div>
+                </div>
+                <div className="osbc-category-div">
+                  <div className="osbc-category-left-border"></div>
+                  <div className="osbc-category-container">
+                    <div className="osbc-category"></div>
+                    <div className="osbc-category-amount"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
