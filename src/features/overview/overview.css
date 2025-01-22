@@ -382,6 +382,7 @@
   gap: 4px;
   width: 81px;
   height: 43px;
+  text-align: start;
 }
 
 .osbc-category {
