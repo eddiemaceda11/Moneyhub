@@ -6,6 +6,7 @@ import { JarIcon } from "./JarIcon";
 import emmaImage from "../../assets/images/avatars/emma-richardson.jpg";
 
 export const Overview = () => {
+  // START balance logic - TODO - export this logic and state into its own file
   const [balance, setBalance] = useState({
     current: "",
     expenses: "",
@@ -28,6 +29,7 @@ export const Overview = () => {
       }));
     }
   }, [data]);
+  // END balance logic
 
   if (isLoading) return <div>Loading...</div>;
 
