@@ -216,22 +216,22 @@ export const Overview = () => {
                 <div className="osbc-category-div">
                   <div className="osbc-category-left-border"></div>
                   <div className="osbc-category-container">
-                    <div className="osbc-category"></div>
-                    <div className="osbc-category-amount"></div>
+                    <div className="osbc-category">Bills</div>
+                    <div className="osbc-category-amount">$750.00</div>
                   </div>
                 </div>
                 <div className="osbc-category-div">
                   <div className="osbc-category-left-border"></div>
                   <div className="osbc-category-container">
-                    <div className="osbc-category"></div>
-                    <div className="osbc-category-amount"></div>
+                    <div className="osbc-category">Dining Out</div>
+                    <div className="osbc-category-amount">$75.00</div>
                   </div>
                 </div>
                 <div className="osbc-category-div">
                   <div className="osbc-category-left-border"></div>
                   <div className="osbc-category-container">
-                    <div className="osbc-category"></div>
-                    <div className="osbc-category-amount"></div>
+                    <div className="osbc-category">Personal Care</div>
+                    <div className="osbc-category-amount">$100.00</div>
                   </div>
                 </div>
               </div>
