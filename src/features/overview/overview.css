@@ -355,7 +355,6 @@
 }
 
 .outer-pie-graph {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -363,11 +362,11 @@
   height: 240px;
   background-color: rgb(168, 213, 227);
   border-radius: 50%;
+  position: absolute;
   z-index: 1;
 }
 
 .middle-pie-graph {
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -375,6 +374,7 @@
   height: 187.5px;
   background-color: rgba(255, 255, 255, 0.3); /* 0.3 opacity prevents the opacity from affecting the child element - inner-pie-graph */
   border-radius: 50%;
+  position: absolute;
   z-index: 2;
 }
 
@@ -386,7 +386,7 @@
   height: 162px;
   background-color: #fff;
   border-radius: 50%;
-  position: fixed;
+  position: absolute;
   z-index: 4;
 }
 
