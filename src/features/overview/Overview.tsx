@@ -208,7 +208,18 @@ export const Overview = () => {
               <p>See Details</p>
             </div>
             <div className="osb-content">
-              <div className="osbc-left"></div>
+              <div className="osbc-left">
+                <div className="outer-pie-graph">
+                  <div className="middle-pie-graph">
+                    <div className="inner-pie-graph">
+                      <div className="ipg-data">
+                        <h4>$338</h4>
+                        <p>of $500 limit</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="osbc-right">
                 <div className="osbc-category-div">
                   <div className="osbc-category-left-border"></div>
