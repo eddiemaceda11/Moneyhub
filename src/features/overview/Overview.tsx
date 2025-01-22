@@ -6,8 +6,8 @@ import { JarIcon } from "./JarIcon";
 import emmaImage from "../../assets/images/avatars/emma-richardson.jpg";
 
 export const Overview = () => {
-  // START balance logic - TODO - export this logic and state into its own file
-  const [balance, setBalance] = useState({
+  // START balanceData logic - TODO - export this logic and state into its own file
+  const [balanceData, setBalanceData] = useState({
     current: "",
     expenses: "",
     income: "",
@@ -17,11 +17,11 @@ export const Overview = () => {
 
   useEffect(() => {
     if (data) {
-      const formattedCurrent = formatCurrency(data.balance.current);
-      const formattedExpenses = formatCurrency(data.balance.expenses);
-      const formattedCurrency = formatCurrency(data.balance.income);
+      const formattedCurrent = formatCurrency(data.balanceData.current);
+      const formattedExpenses = formatCurrency(data.balanceData.expenses);
+      const formattedCurrency = formatCurrency(data.balanceData.income);
 
-      setBalance((prev) => ({
+      setBalanceData((prev) => ({
         ...prev,
         current: formattedCurrent,
         expenses: formattedExpenses,
@@ -29,7 +29,7 @@ export const Overview = () => {
       }));
     }
   }, [data]);
-  // END balance logic
+  // END balanceData logic
 
   if (isLoading) return <div>Loading...</div>;
 
@@ -51,15 +51,15 @@ export const Overview = () => {
       <div className="overview-info-container">
         <div>
           <h4>Current Balance</h4>
-          <p>${balance.current}</p>
+          <p>${balanceData.current}</p>
         </div>
         <div>
           <h4>Income</h4>
-          <p>${balance.income}</p>
+          <p>${balanceData.income}</p>
         </div>
         <div>
           <h4>Expenses</h4>
-          <p>${balance.expenses}</p>
+          <p>${balanceData.expenses}</p>
         </div>
       </div>
 
