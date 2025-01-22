@@ -65,6 +65,7 @@ export const Overview = () => {
         </div>
       </div>
 
+      {/* OVERVIEW CONTENT */}
       <section className="additionals-section">
         {/* LEFT SIDE OF THE OVERVIEW CONTENT (TOP ON MOBILE) */}
         <div className="additionals-section-left">
