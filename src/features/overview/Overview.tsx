@@ -199,7 +199,10 @@ export const Overview = () => {
         <div className="additionals-section-right">
           {/* BUDGETS */}
           <div className="overview-section-budgets">
-            <div className="osb-header"></div>
+            <div className="osb-header">
+              <h3>Budgets</h3>
+              <p>See Details</p>
+            </div>
             <div className="osb-content"></div>
           </div>
         </div>
