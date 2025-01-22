@@ -37,6 +37,7 @@ export const Overview = () => {
     return <div>Error fetching data</div>;
   }
 
+  // TODO - Move this to the hooks folder
   function formatCurrency(value: number) {
     const formattedNumber = new Intl.NumberFormat("en-US", {
       minimumFractionDigits: 2,
