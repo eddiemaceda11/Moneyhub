@@ -196,7 +196,13 @@ export const Overview = () => {
           </div>
         </div>
 
-        <div className="additionals-section-right"></div>
+        <div className="additionals-section-right">
+          {/* BUDGETS */}
+          <div className="overview-section-budgets">
+            <div className="osb-header"></div>
+            <div className="osb-content"></div>
+          </div>
+        </div>
       </section>
     </>
   );
