@@ -64,6 +64,7 @@ export const Overview = () => {
       </div>
 
       <section className="additionals-section">
+        {/* LEFT SIDE OF THE OVERVIEW CONTENT (TOP ON MOBILE) */}
         <div className="additionals-section-left">
           {/* POTS */}
           <div className="overview-section-pots">
@@ -198,6 +199,7 @@ export const Overview = () => {
           </div>
         </div>
 
+        {/* RIGHT SIDE OF THE OVERVIEW CONTENT (BOTTOM ON MOBILE) */}
         <div className="additionals-section-right">
           {/* BUDGETS */}
           <div className="overview-section-budgets">
