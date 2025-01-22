@@ -352,7 +352,6 @@
 .osbc-left {
   width: 247px;
   height: 240px;
-  border: 1px solid black;
 }
 
 .osbc-right {
@@ -361,7 +360,6 @@
   width: 101px;
   height: 220px;
   flex-direction: column;
-  border: 1px solid black;
 }
 
 .osbc-category-div {
@@ -384,8 +382,6 @@
   gap: 4px;
   width: 81px;
   height: 43px;
-
-  border: 1px solid red;
 }
 
 .osbc-category {
