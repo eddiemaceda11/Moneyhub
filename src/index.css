@@ -21,8 +21,11 @@
   --font-bold: 700;
   --font-regular: 400;
 
-
   font-family: "Public Sans", serif;
+}
+
+body {
+  overscroll-behavior: none;
 }
 
 a {
