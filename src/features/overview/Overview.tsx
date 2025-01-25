@@ -256,7 +256,12 @@ export const Overview = () => {
             </div>
           </div>
           {/* RECURRING BILLS */}
-          <div className="overview-section-recurring"></div>
+          <div className="overview-section-recurring">
+            <div className="osr-header">
+              <h3>Recurring Bills</h3>
+              <p>See Details</p>
+            </div>
+          </div>
         </div>
       </section>
     </>
