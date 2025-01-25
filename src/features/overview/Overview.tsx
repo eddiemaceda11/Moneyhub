@@ -17,9 +17,9 @@ export const Overview = () => {
 
   useEffect(() => {
     if (data) {
-      const formattedCurrent = formatCurrency(data.balanceData.current);
-      const formattedExpenses = formatCurrency(data.balanceData.expenses);
-      const formattedCurrency = formatCurrency(data.balanceData.income);
+      const formattedCurrent = formatCurrency(data.balance.current);
+      const formattedExpenses = formatCurrency(data.balance.expenses);
+      const formattedCurrency = formatCurrency(data.balance.income);
 
       setBalanceData((prev) => ({
         ...prev,
