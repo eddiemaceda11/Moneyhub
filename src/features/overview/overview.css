@@ -465,3 +465,15 @@
   font-weight: var(--font-bold);
   line-height: 150%;
 }
+
+.overview-section-recurring {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 428px;
+  height: 327px;
+  padding: 32px;
+  background-color: var(--color-p-white);
+  border-radius: 12px;
+  box-shadow: 0px 4px 24px 0px #d6d6d658;
+}
