@@ -256,6 +256,7 @@ export const Overview = () => {
             </div>
           </div>
           {/* RECURRING BILLS */}
+          <div className="overview-section-recurring"></div>
         </div>
       </section>
     </>
