@@ -16,7 +16,5 @@
     height: 60px;
     display: inline-block;
     background-color: var(--color-grey-900);
-    /* border-top-right-radius: 14px; */
-    /* border-bottom-right-radius: 14px; */
   }
 }
