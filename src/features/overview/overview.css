@@ -478,3 +478,43 @@
   border-radius: 12px;
   box-shadow: 0px 4px 24px 0px #d6d6d658;
 }
+
+.osr-header {
+  display: flex;
+  justify-content: space-between;
+  width: 364px;
+  height: 24px;
+}
+
+.osr-header h3 {
+  width: 147px;
+  height: 24px;
+  font-size: 20px;
+  font-weight: var(--font-bold);
+  line-height: 120%;
+  color: var(--color-grey-900);
+  border: 1px solid red;
+}
+
+.osr-header div {
+  display: flex;
+  gap: 12px;
+  width: 98px;
+  height: 21px;
+  border: 1px solid red;
+}
+
+.osr-header div p {
+  width: 74px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--color-grey-500);
+}
+
+.osr-header div span {
+  width: 8px;
+  height: 5px;
+  color: var(--color-grey-500);
+  border: 1px solid red;
+}
