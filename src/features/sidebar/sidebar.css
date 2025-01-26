@@ -1,8 +1,22 @@
 .sidebar {
-  /* width: 88px; COLLAPSED WIDTH*/
   width: 300px;
   display: inline-block;
   background-color: var(--color-grey-900);
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
+}
+
+@media (max-width: 1438px) {
+  .sidebar {
+    width: 88px;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: 60px;
+    display: inline-block;
+    background-color: var(--color-grey-900);
+    /* border-top-right-radius: 14px; */
+    /* border-bottom-right-radius: 14px; */
+  }
 }
