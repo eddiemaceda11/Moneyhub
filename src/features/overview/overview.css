@@ -493,7 +493,6 @@
   font-weight: var(--font-bold);
   line-height: 120%;
   color: var(--color-grey-900);
-  border: 1px solid red;
 }
 
 .osr-header div {
@@ -501,7 +500,6 @@
   gap: 12px;
   width: 98px;
   height: 21px;
-  border: 1px solid red;
 }
 
 .osr-header div p {
@@ -516,5 +514,4 @@
   width: 8px;
   height: 5px;
   color: var(--color-grey-500);
-  border: 1px solid red;
 }
