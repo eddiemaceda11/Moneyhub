@@ -7,7 +7,6 @@
   padding: 8px 0px;
   text-align: left;
   font-weight: var(--font-bold);
-  border: 1px solid red;
 }
 
 .overview-info-container {
@@ -55,7 +54,6 @@
   max-width: 1060px;
   min-height: 761px;
   box-sizing: border-box; /* Includes padding in the width */
-  border: 1px solid blue;
 }
 
 .additionals-section-left {
@@ -552,7 +550,6 @@
   line-height: 150%;
   text-align: start;
   color: var(--color-grey-500);
-  /* border: 1px solid red; */
 }
 
 .osr-content div span {
