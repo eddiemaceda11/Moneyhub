@@ -24,6 +24,11 @@
   font-family: "Public Sans", serif;
 }
 
+/* html,
+body {
+  overflow-x: hidden;
+} */
+
 body {
   overscroll-behavior: none;
 }
@@ -92,16 +97,24 @@ button:focus-visible {
 }
 
 main {
-  /* width: 79%; */
+  align-items: center;
+  /* width: calc(100vw - 57.836px);  */
+  width: calc(100vw - 300px); /* Subtract sidebar width from the viewport width */
+  /* max-width: calc(100vw - 57.836px); */
+  max-width: calc(100vw - 300px); /* Ensures no overflow */
+  box-sizing: border-box; /* Includes padding in the width */
+  background-color: var(--primary-bg-beige);
+  background-color: black;
+  overflow: scroll;
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   gap: 32px;
   padding: 32px 40px;
-  align-items: center;
-  min-width: calc(100vw - 300px);
-  background-color: purple;
-  background-color: var(--primary-bg-beige);
+  border: 1px solid purple;
+  width: 100%;
   position: relative;
-  overflow: scroll;
 }
