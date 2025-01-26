@@ -259,7 +259,10 @@ export const Overview = () => {
           <div className="overview-section-recurring">
             <div className="osr-header">
               <h3>Recurring Bills</h3>
-              <p>See Details</p>
+              <div>
+                <p>See Details</p>
+                <span>x</span>
+              </div>
             </div>
           </div>
         </div>
