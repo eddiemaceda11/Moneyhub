@@ -101,7 +101,6 @@ main {
   /* width: calc(100vw - 57.836px);  */
   /* width: calc(100vw - 300px); */
   /* max-width: calc(100vw - 57.836px); */
-  /* max-width: calc(100vw - 88px); */
   box-sizing: border-box; /* Includes padding in the width */
   background-color: var(--primary-bg-beige);
   overflow: scroll;
