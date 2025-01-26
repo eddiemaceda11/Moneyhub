@@ -104,7 +104,6 @@ main {
   max-width: calc(100vw - 300px); /* Ensures no overflow */
   box-sizing: border-box; /* Includes padding in the width */
   background-color: var(--primary-bg-beige);
-  background-color: black;
   overflow: scroll;
 }
 
@@ -114,7 +113,6 @@ main {
   flex-grow: 1;
   gap: 32px;
   padding: 32px 40px;
-  border: 1px solid purple;
   width: 100%;
   position: relative;
 }
