@@ -23,6 +23,15 @@
   color: var(--color-p-white);
 }
 
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 300px;
+  height: 800px;
+  padding-right: 24px;
+}
+
 @media (max-width: 1438px) {
   .sidebar {
     width: 88px;
