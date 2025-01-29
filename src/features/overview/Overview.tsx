@@ -5,11 +5,13 @@ import { useBalanceData } from "../../hooks/useBalanceData";
 
 import { JarIcon } from "./JarIcon";
 import emmaImage from "../../assets/images/avatars/emma-richardson.jpg";
+import { usePotsData } from "../../hooks/usePotsData";
 
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
 
   const balanceData = useBalanceData(data?.balance);
+  const potsData = usePotsData(data?.pots);
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error fetching data</div>;
@@ -57,15 +59,15 @@ export const Overview = () => {
                   <div className="opib-top-left">
                     <div className="opib-border one"></div>
                     <div className="opib-items">
-                      <p>Savings</p>
-                      <span>$159</span>
+                      <p>{potsData[1].name}</p>
+                      <span>${potsData[1].total}</span>
                     </div>
                   </div>
                   <div className="opib-top-right">
                     <div className="opib-border two"></div>
                     <div className="opib-items">
-                      <p>Gift</p>
-                      <span>$40</span>
+                      <p>{potsData[2].name}</p>
+                      <span>${potsData[2].total}</span>
                     </div>
                   </div>
                 </div>
@@ -73,15 +75,15 @@ export const Overview = () => {
                   <div className="opib-bottom-left">
                     <div className="opib-border three"></div>
                     <div className="opib-items">
-                      <p>Concert Ticket</p>
-                      <span>$110</span>
+                      <p>{potsData[3].name}</p>
+                      <span>${potsData[3].total}</span>
                     </div>
                   </div>
                   <div className="opib-bottom-right">
                     <div className="opib-border four"></div>
                     <div className="opib-items">
-                      <p>New Notebook</p>
-                      <span>$10</span>
+                      <p>{potsData[4].name}</p>
+                      <span>${potsData[4].total}</span>
                     </div>
                   </div>
                 </div>
