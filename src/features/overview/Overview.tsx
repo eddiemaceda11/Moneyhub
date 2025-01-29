@@ -3,6 +3,7 @@ import "./overview.css";
 
 import { useBalanceData } from "../../hooks/useBalanceData";
 import { usePotsData } from "../../hooks/usePotsData";
+import { useTransactionsData } from "../../hooks/useTransactionsData";
 
 import { JarIcon } from "./JarIcon";
 import emmaImage from "../../assets/images/avatars/emma-richardson.jpg";
