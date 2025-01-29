@@ -3,6 +3,7 @@ import sidebarOverviewIcon from "../../assets/images/icon-nav-overview.svg";
 import sidebarTransactionsIcon from "../../assets/images/icon-nav-transactions.svg";
 import sidebarBudgetsIcon from "../../assets/images/icon-nav-budgets.svg";
 import sidebarPotsIcon from "../../assets/images/icon-nav-pots.svg";
+import sidebarRecurringBillsIcon from "../../assets/images/icon-nav-recurring-bills.svg";
 
 export const Sidebar = () => {
   return (
@@ -35,7 +36,12 @@ export const Sidebar = () => {
             alt=""
           />
         </div>
-        <div className="sidebar-nav-item"></div>
+        <div className="sidebar-nav-item">
+          <img
+            src={sidebarRecurringBillsIcon}
+            alt=""
+          />
+        </div>
       </nav>
     </div>
   );
