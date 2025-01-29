@@ -1,9 +1,26 @@
 .sidebar {
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
   width: 300px;
-  display: inline-block;
+  padding-bottom: 24px;
   background-color: var(--color-grey-900);
   border-top-right-radius: 14px;
   border-bottom-right-radius: 14px;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 40px 32px;
+  height: 101.76px;
+}
+
+.sidebar-header h2 {
+  width: 121px;
+  height: 22px;
+  color: var(--color-p-white);
 }
 
 @media (max-width: 1438px) {
