@@ -2,6 +2,7 @@ import "./sidebar.css";
 import sidebarOverviewIcon from "../../assets/images/icon-nav-overview.svg";
 import sidebarTransactionsIcon from "../../assets/images/icon-nav-transactions.svg";
 import sidebarBudgetsIcon from "../../assets/images/icon-nav-budgets.svg";
+import sidebarPotsIcon from "../../assets/images/icon-nav-pots.svg";
 
 export const Sidebar = () => {
   return (
@@ -28,7 +29,12 @@ export const Sidebar = () => {
             alt=""
           />
         </div>
-        <div className="sidebar-nav-item"></div>
+        <div className="sidebar-nav-item">
+          <img
+            src={sidebarPotsIcon}
+            alt=""
+          />
+        </div>
         <div className="sidebar-nav-item"></div>
       </nav>
     </div>
