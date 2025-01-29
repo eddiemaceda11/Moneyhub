@@ -8,6 +8,10 @@ export const Sidebar = () => {
       </header>
       <nav className="sidebar-nav">
         <div className="sidebar-nav-item"></div>
+        <div className="sidebar-nav-item"></div>
+        <div className="sidebar-nav-item"></div>
+        <div className="sidebar-nav-item"></div>
+        <div className="sidebar-nav-item"></div>
       </nav>
     </div>
   );
