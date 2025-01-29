@@ -2,10 +2,10 @@ import { useGetOverviewQuery } from "../../services/overviewApi";
 import "./overview.css";
 
 import { useBalanceData } from "../../hooks/useBalanceData";
+import { usePotsData } from "../../hooks/usePotsData";
 
 import { JarIcon } from "./JarIcon";
 import emmaImage from "../../assets/images/avatars/emma-richardson.jpg";
-import { usePotsData } from "../../hooks/usePotsData";
 
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
