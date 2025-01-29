@@ -13,6 +13,7 @@ export const Overview = () => {
 
   const balanceData = useBalanceData(data?.balance);
   const potsData = usePotsData(data?.pots);
+  const transactionsData = useTransactionsData(data?.transactions);
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error fetching data</div>;
