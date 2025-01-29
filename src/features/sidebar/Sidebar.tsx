@@ -6,7 +6,9 @@ export const Sidebar = () => {
       <header className="sidebar-header">
         <h2>moneyhub</h2>
       </header>
-      <nav className="sidebar-nav"></nav>
+      <nav className="sidebar-nav">
+        <div className="sidebar-nav-item"></div>
+      </nav>
     </div>
   );
 };
