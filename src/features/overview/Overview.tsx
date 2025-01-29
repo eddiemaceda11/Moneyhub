@@ -1,50 +1,19 @@
-import { useEffect, useState } from "react";
 import { useGetOverviewQuery } from "../../services/overviewApi";
 import "./overview.css";
+
+import { useBalanceData } from "../../hooks/useBalanceData";
 
 import { JarIcon } from "./JarIcon";
 import emmaImage from "../../assets/images/avatars/emma-richardson.jpg";
 
 export const Overview = () => {
-  // START balanceData logic - TODO - export this logic and state into its own file
-  const [balanceData, setBalanceData] = useState({
-    current: "",
-    expenses: "",
-    income: "",
-  });
-
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
 
-  useEffect(() => {
-    if (data) {
-      const formattedCurrent = formatCurrency(data.balance.current);
-      const formattedExpenses = formatCurrency(data.balance.expenses);
-      const formattedCurrency = formatCurrency(data.balance.income);
-
-      setBalanceData((prev) => ({
-        ...prev,
-        current: formattedCurrent,
-        expenses: formattedExpenses,
-        income: formattedCurrency,
-      }));
-    }
-  }, [data]);
-  // END balanceData logic
+  const balanceData = useBalanceData(data?.balance);
 
   if (isLoading) return <div>Loading...</div>;
-
-  if (error) {
-    return <div>Error fetching data</div>;
-  }
-
-  // TODO - Move this to the hooks folder
-  function formatCurrency(value: number) {
-    const formattedNumber = new Intl.NumberFormat("en-US", {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    }).format(value);
-    return formattedNumber;
-  }
+  if (error) return <div>Error fetching data</div>;
+  if (!data) return null;
 
   return (
     <>
