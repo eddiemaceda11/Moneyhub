@@ -61,6 +61,17 @@
   /* filter: grayscale(0) brightness(1) invert(0) sepia(1) hue-rotate(200deg); */
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 32px;
+  width: 300px;
+  height: 56px;
+  color: var(--color-grey-300);
+  border: 1px solid blue;
+}
+
 @media (max-width: 1438px) {
   .sidebar {
     width: 88px;
