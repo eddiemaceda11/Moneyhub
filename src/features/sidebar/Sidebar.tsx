@@ -1,10 +1,10 @@
 import "./sidebar.css";
-import sidebarOverviewIcon from "../../assets/images/icon-nav-overview.svg";
-import sidebarTransactionsIcon from "../../assets/images/icon-nav-transactions.svg";
-import sidebarBudgetsIcon from "../../assets/images/icon-nav-budgets.svg";
-import sidebarPotsIcon from "../../assets/images/icon-nav-pots.svg";
-import sidebarRecurringBillsIcon from "../../assets/images/icon-nav-recurring-bills.svg";
-import sidebarMinimizeMenuIcon from "../../assets/images/icon-minimize-menu.svg";
+import sidebarOverviewIcon from "/images/icon-nav-overview.svg";
+import sidebarTransactionsIcon from "/images/icon-nav-transactions.svg";
+import sidebarBudgetsIcon from "/images/icon-nav-budgets.svg";
+import sidebarPotsIcon from "/images/icon-nav-pots.svg";
+import sidebarRecurringBillsIcon from "/images/icon-nav-recurring-bills.svg";
+import sidebarMinimizeMenuIcon from "/images/icon-minimize-menu.svg";
 import { useState } from "react";
 
 export const Sidebar = () => {
