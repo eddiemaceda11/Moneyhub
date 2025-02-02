@@ -17,30 +17,35 @@ export const Sidebar = () => {
             src={sidebarOverviewIcon}
             alt=""
           />
+          <p>Overview</p>
         </div>
         <div className="sidebar-nav-item">
           <img
             src={sidebarTransactionsIcon}
             alt=""
           />
+          <p>Transactions</p>
         </div>
         <div className="sidebar-nav-item">
           <img
             src={sidebarBudgetsIcon}
             alt=""
           />
+          <p>Budgets</p>
         </div>
         <div className="sidebar-nav-item">
           <img
             src={sidebarPotsIcon}
             alt=""
           />
+          <p>Pots</p>
         </div>
         <div className="sidebar-nav-item">
           <img
             src={sidebarRecurringBillsIcon}
             alt=""
           />
+          <p>Recurring Bills</p>
         </div>
       </nav>
     </div>
