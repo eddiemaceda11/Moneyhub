@@ -49,6 +49,13 @@ export const Sidebar = () => {
           <p>Recurring Bills</p>
         </div>
       </nav>
+      <footer>
+        <img
+          src={sidebarMinimizeMenuIcon}
+          alt=""
+        />
+        <p>Minimize Menu</p>
+      </footer>
     </div>
   );
 };
