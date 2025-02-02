@@ -268,12 +268,14 @@
 }
 
 .overview-transactions-info div .oti-left p {
-  width: 121px;
+  width: 60%;
   height: 21px;
   color: var(--color-grey-900);
   font-size: 14px;
   line-height: 150%;
   font-weight: var(--font-bold);
+  text-align: start;
+  border: 1px solid red;
 }
 
 .overview-transactions-info div .oti-right {
