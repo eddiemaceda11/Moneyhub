@@ -5,10 +5,13 @@ import sidebarBudgetsIcon from "../../assets/images/icon-nav-budgets.svg";
 import sidebarPotsIcon from "../../assets/images/icon-nav-pots.svg";
 import sidebarRecurringBillsIcon from "../../assets/images/icon-nav-recurring-bills.svg";
 import sidebarMinimizeMenuIcon from "../../assets/images/icon-minimize-menu.svg";
+import { useState } from "react";
 
 export const Sidebar = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+
   return (
-    <div className="sidebar">
+    <div className={sidebarOpen ? "sidebar sidebar-open" : "sidebar sidebar-closed"}>
       <header className="sidebar-header">
         <h2>moneyhub</h2>
       </header>
@@ -49,7 +52,7 @@ export const Sidebar = () => {
           <p>Recurring Bills</p>
         </div>
       </nav>
-      <footer>
+      <footer onClick={() => setSidebarOpen(!sidebarOpen)}>
         <img
           src={sidebarMinimizeMenuIcon}
           alt=""
