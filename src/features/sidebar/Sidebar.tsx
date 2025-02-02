@@ -4,6 +4,7 @@ import sidebarTransactionsIcon from "../../assets/images/icon-nav-transactions.s
 import sidebarBudgetsIcon from "../../assets/images/icon-nav-budgets.svg";
 import sidebarPotsIcon from "../../assets/images/icon-nav-pots.svg";
 import sidebarRecurringBillsIcon from "../../assets/images/icon-nav-recurring-bills.svg";
+import sidebarMinimizeMenuIcon from "../../assets/images/icon-minimize-menu.svg";
 
 export const Sidebar = () => {
   return (
