@@ -52,6 +52,7 @@ export const Sidebar = () => {
       </nav>
       <footer onClick={() => setSidebarOpen(!sidebarOpen)}>
         <img
+          className={sidebarOpen ? "" : "menu-closed"}
           src={sidebarMinimizeMenuIcon}
           alt=""
         />

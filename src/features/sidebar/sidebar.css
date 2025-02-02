@@ -92,6 +92,14 @@ footer {
   cursor: pointer;
 }
 
+footer img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-closed {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 1438px) {
   .sidebar {
     width: 88px;
