@@ -19,6 +19,13 @@ export const Overview = () => {
   if (error) return <div>Error fetching data</div>;
   if (!data) return null;
 
+  // TODO -> move into a utils folder
+  function configureImgPath(image: string): string {
+    const updatedImagePath = image.split("");
+    updatedImagePath.splice(0, 1, "src");
+    return updatedImagePath.join("");
+  }
+
   return (
     <>
       {/* OVERVIEW HEADER */}
