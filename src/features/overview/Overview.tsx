@@ -11,9 +11,11 @@ import emmaImage from "../../assets/images/avatars/emma-richardson.jpg";
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
 
+  console.log(data);
   const balanceData = useBalanceData(data?.balance);
   const potsData = usePotsData(data?.pots);
   const transactionsData = useTransactionsData(data?.transactions);
+  // const budgetData = useBudgetData(data?.budgets);
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error fetching data</div>;
