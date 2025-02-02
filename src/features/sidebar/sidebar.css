@@ -24,8 +24,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.sidebar-closed p,
-.sidebar-closed h2 {
+.sidebar-closed p {
   opacity: 0;
   pointer-events: none; /* Prevents interaction when collapsed */
 }

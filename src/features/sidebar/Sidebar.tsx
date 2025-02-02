@@ -12,9 +12,7 @@ export const Sidebar = () => {
 
   return (
     <div className={sidebarOpen ? "sidebar sidebar-open" : "sidebar sidebar-closed"}>
-      <header className="sidebar-header">
-        <h2>moneyhub</h2>
-      </header>
+      <header className="sidebar-header">{sidebarOpen ? <h2>moneyhub</h2> : <h2>m</h2>}</header>
       <nav className="sidebar-nav">
         <div className="sidebar-nav-item">
           <img
