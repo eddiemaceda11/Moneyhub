@@ -31,7 +31,6 @@
   width: 300px;
   height: 600px;
   padding-right: 24px;
-  border: 1px solid red;
 }
 
 .sidebar-nav-item {
@@ -68,7 +67,6 @@ footer {
   width: 300px;
   height: 56px;
   color: var(--color-grey-300);
-  border: 1px solid blue;
 }
 
 @media (max-width: 1438px) {
