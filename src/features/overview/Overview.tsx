@@ -6,7 +6,7 @@ import { usePotsData } from "../../hooks/usePotsData";
 import { useTransactionsData } from "../../hooks/useTransactionsData";
 
 import { JarIcon } from "./JarIcon";
-import emmaImage from "../../assets/images/avatars/emma-richardson.jpg";
+import emmaImage from "/images/avatars/emma-richardson.jpg";
 
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
@@ -23,9 +23,11 @@ export const Overview = () => {
 
   // TODO -> move into a utils folder
   function configureImgPath(image: string): string {
-    const updatedImagePath = image.split("");
-    updatedImagePath.splice(0, 1, "src");
-    return updatedImagePath.join("");
+    console.log(image.slice(8));
+    // const updatedImagePath = image.split("");
+    // updatedImagePath.splice(0, 1, "src");
+    // return updatedImagePath.join("");
+    return image.slice(8);
   }
 
   return (
