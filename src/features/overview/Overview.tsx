@@ -105,24 +105,26 @@ export const Overview = () => {
               <div>
                 <div className="oti-left">
                   <img
-                    src={emmaImage}
+                    src={configureImgPath(transactionsData[0].avatar)}
                     alt=""
                   />
-                  <p>Emma Richardson</p>
+                  <p>{transactionsData[0].name}</p>
                 </div>
                 <div className="oti-right">
-                  <p>+75.50</p>
+                  {/* <p>+{transactionsData[0].amount}</p> */}
+                  <p>+79.80</p>
                   <span>19 Aug 2024</span>
+                  {/* <span>{transactionsData[0].date}</span> */}
                 </div>
               </div>
               <div className="oti-line"></div>
               <div>
                 <div className="oti-left">
                   <img
-                    src={emmaImage}
+                    src={configureImgPath(transactionsData[1].avatar)}
                     alt=""
                   />
-                  <p>Emma Richardson</p>
+                  <p>{transactionsData[1].name}s</p>
                 </div>
                 <div className="oti-right">
                   <p>+75.50</p>
