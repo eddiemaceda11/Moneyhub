@@ -24,9 +24,6 @@ export const Overview = () => {
   // TODO -> move into a utils folder
   function configureImgPath(image: string): string {
     console.log(image.slice(8));
-    // const updatedImagePath = image.split("");
-    // updatedImagePath.splice(0, 1, "src");
-    // return updatedImagePath.join("");
     return image.slice(8);
   }
 
