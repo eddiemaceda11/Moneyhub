@@ -23,7 +23,6 @@ export const Overview = () => {
 
   // TODO -> move into a utils folder
   function configureImgPath(image: string): string {
-    console.log(image.slice(8));
     return image.slice(8);
   }
 
