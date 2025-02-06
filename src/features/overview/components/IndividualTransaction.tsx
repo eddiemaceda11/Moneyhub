@@ -1,3 +1,3 @@
 export const IndividualTransaction = () => {
-  return "test";
+  return <div>Individual Transaction</div>;
 };
