@@ -9,6 +9,7 @@ import { JarIcon } from "./JarIcon";
 
 import { useBudgetData } from "../../hooks/useBudgetData";
 import { OverviewTransactions } from "./components/OverviewTransactions/OverviewTransaction";
+import { OverviewBudgets } from "./components/OverviewBudgets/OverviewBudgets";
 
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
@@ -103,56 +104,7 @@ export const Overview = () => {
         {/* RIGHT SIDE OF THE OVERVIEW CONTENT (BOTTOM ON MOBILE) */}
         <div className="additionals-section-right">
           {/* BUDGETS */}
-          <div className="overview-section-budgets">
-            <div className="osb-header">
-              <h3>Budgets</h3>
-              <p>See Details</p>
-            </div>
-            <div className="osb-content">
-              <div className="osbc-left">
-                <div className="outer-pie-graph">
-                  <div className="middle-pie-graph">
-                    <div className="inner-pie-graph">
-                      <div className="ipg-data">
-                        <h4>$338</h4>
-                        <p>of $500 limit</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="osbc-right">
-                <div className="osbc-category-div">
-                  <div className="osbc-category-left-border"></div>
-                  <div className="osbc-category-container">
-                    <div className="osbc-category">{budgetData[0].category}</div>
-                    <div className="osbc-category-amount">${budgetData[0].maximum}</div>
-                  </div>
-                </div>
-                <div className="osbc-category-div">
-                  <div className="osbc-category-left-border"></div>
-                  <div className="osbc-category-container">
-                    <div className="osbc-category">Bills</div>
-                    <div className="osbc-category-amount">$750.00</div>
-                  </div>
-                </div>
-                <div className="osbc-category-div">
-                  <div className="osbc-category-left-border"></div>
-                  <div className="osbc-category-container">
-                    <div className="osbc-category">Dining Out</div>
-                    <div className="osbc-category-amount">$75.00</div>
-                  </div>
-                </div>
-                <div className="osbc-category-div">
-                  <div className="osbc-category-left-border"></div>
-                  <div className="osbc-category-container">
-                    <div className="osbc-category">Personal Care</div>
-                    <div className="osbc-category-amount">$100.00</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <OverviewBudgets budgetData={budgetData} />
           {/* RECURRING BILLS */}
           <div className="overview-section-recurring">
             <div className="osr-header">
