@@ -6,7 +6,7 @@ import { usePotsData } from "../../hooks/usePotsData";
 import { useTransactionsData } from "../../hooks/useTransactionsData";
 
 import { JarIcon } from "./JarIcon";
-import emmaImage from "/images/avatars/emma-richardson.jpg";
+
 import { useBudgetData } from "../../hooks/useBudgetData";
 import { OverviewTransactions } from "./components/OverviewTransactions/OverviewTransaction";
 
