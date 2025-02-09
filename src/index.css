@@ -108,6 +108,7 @@ main {
   padding: 32px 40px;
   width: 100%;
   height: auto;
+  min-height: 1075px;
   position: relative;
 }
 
