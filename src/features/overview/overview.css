@@ -300,9 +300,9 @@
   line-height: 150%;
 }
 
-.oti-line {
-  width: 544px;
-  max-height: 1px;
+.overview-transactions-info .oti-line {
+  min-width: 100%;
+  min-height: 1px;
   background-color: var(--color-grey-100);
 }
 
