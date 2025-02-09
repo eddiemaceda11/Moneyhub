@@ -4,8 +4,6 @@ export const IndividualTransaction = ({ transactionsData }: any) => {
     return image.slice(8);
   }
 
-  console.log("transactionsData:", transactionsData);
-
   return (
     <>
       <div>
