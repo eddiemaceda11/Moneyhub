@@ -1,5 +1,4 @@
 import { IndividualTransaction } from "./IndividualTransaction";
-import emmaImage from "/images/avatars/emma-richardson.jpg";
 
 export const OverviewTransactions = ({ transactionsData }: any) => {
   const overviewTransactions = transactionsData.slice(0, 5);
