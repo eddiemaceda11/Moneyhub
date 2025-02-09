@@ -7,6 +7,12 @@ export const OverviewTransactions = ({ transactionsData }: any) => {
     return image.slice(8);
   }
 
+  const overviewTransactions = transactionsData.slice(0, 5);
+
+  const renderedOverviewTransactions = overviewTransactions.map((transaction: any) => {
+    return <IndividualTransaction transactionsData={transaction} />;
+  });
+
   return (
     <div className="overview-section-transaction">
       <header>
@@ -16,65 +22,7 @@ export const OverviewTransactions = ({ transactionsData }: any) => {
           <span></span>
         </div>
       </header>
-      <div className="overview-transactions-info">
-        <IndividualTransaction transactionsData={transactionsData} />
-        <div className="oti-line"></div>
-        <div>
-          <div className="oti-left">
-            <img
-              src={configureImgPath(transactionsData[1].avatar)}
-              alt=""
-            />
-            <p>{transactionsData[1].name}s</p>
-          </div>
-          <div className="oti-right">
-            <p>+75.50</p>
-            <span>19 Aug 2024</span>
-          </div>
-        </div>
-        <div className="oti-line"></div>
-        <div>
-          <div className="oti-left">
-            <img
-              src={emmaImage}
-              alt=""
-            />
-            <p>Emma Richardson</p>
-          </div>
-          <div className="oti-right">
-            <p>+75.50</p>
-            <span>19 Aug 2024</span>
-          </div>
-        </div>
-        <div className="oti-line"></div>
-        <div>
-          <div className="oti-left">
-            <img
-              src={emmaImage}
-              alt=""
-            />
-            <p>Emma Richardson</p>
-          </div>
-          <div className="oti-right">
-            <p>+75.50</p>
-            <span>19 Aug 2024</span>
-          </div>
-        </div>
-        <div className="oti-line"></div>
-        <div>
-          <div className="oti-left">
-            <img
-              src={emmaImage}
-              alt=""
-            />
-            <p>Emma Richardson</p>
-          </div>
-          <div className="oti-right">
-            <p>+75.50</p>
-            <span>19 Aug 2024</span>
-          </div>
-        </div>
-      </div>
+      <div className="overview-transactions-info">{renderedOverviewTransactions}</div>
     </div>
   );
 };
