@@ -8,6 +8,7 @@ import { useTransactionsData } from "../../hooks/useTransactionsData";
 import { JarIcon } from "./JarIcon";
 import emmaImage from "/images/avatars/emma-richardson.jpg";
 import { useBudgetData } from "../../hooks/useBudgetData";
+import { OverviewTransactions } from "./components/OverviewTransactions/OverviewTransaction";
 
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
@@ -21,11 +22,6 @@ export const Overview = () => {
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error fetching data</div>;
   if (!data) return null;
-
-  // TODO -> move into a utils folder
-  function configureImgPath(image: string): string {
-    return image.slice(8);
-  }
 
   return (
     <>
@@ -101,88 +97,7 @@ export const Overview = () => {
             </div>
           </div>
           {/* TRANSACTIONS */}
-          <div className="overview-section-transaction">
-            <header>
-              <h3>Transactions</h3>
-              <div className="transaction-viewall">
-                <p>View All</p>
-                <span></span>
-              </div>
-            </header>
-            <div className="overview-transactions-info">
-              <div>
-                <div className="oti-left">
-                  <img
-                    src={configureImgPath(transactionsData[0].avatar)}
-                    alt=""
-                  />
-                  <p>{transactionsData[0].name}</p>
-                </div>
-                <div className="oti-right">
-                  {/* <p>+{transactionsData[0].amount}</p> */}
-                  <p>+79.80</p>
-                  <span>19 Aug 2024</span>
-                  {/* <span>{transactionsData[0].date}</span> */}
-                </div>
-              </div>
-              <div className="oti-line"></div>
-              <div>
-                <div className="oti-left">
-                  <img
-                    src={configureImgPath(transactionsData[1].avatar)}
-                    alt=""
-                  />
-                  <p>{transactionsData[1].name}s</p>
-                </div>
-                <div className="oti-right">
-                  <p>+75.50</p>
-                  <span>19 Aug 2024</span>
-                </div>
-              </div>
-              <div className="oti-line"></div>
-              <div>
-                <div className="oti-left">
-                  <img
-                    src={emmaImage}
-                    alt=""
-                  />
-                  <p>Emma Richardson</p>
-                </div>
-                <div className="oti-right">
-                  <p>+75.50</p>
-                  <span>19 Aug 2024</span>
-                </div>
-              </div>
-              <div className="oti-line"></div>
-              <div>
-                <div className="oti-left">
-                  <img
-                    src={emmaImage}
-                    alt=""
-                  />
-                  <p>Emma Richardson</p>
-                </div>
-                <div className="oti-right">
-                  <p>+75.50</p>
-                  <span>19 Aug 2024</span>
-                </div>
-              </div>
-              <div className="oti-line"></div>
-              <div>
-                <div className="oti-left">
-                  <img
-                    src={emmaImage}
-                    alt=""
-                  />
-                  <p>Emma Richardson</p>
-                </div>
-                <div className="oti-right">
-                  <p>+75.50</p>
-                  <span>19 Aug 2024</span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <OverviewTransactions transactionsData={transactionsData} />
         </div>
 
         {/* RIGHT SIDE OF THE OVERVIEW CONTENT (BOTTOM ON MOBILE) */}
