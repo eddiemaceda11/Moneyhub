@@ -7,6 +7,7 @@ import { useTransactionsData } from "../../hooks/useTransactionsData";
 
 import { JarIcon } from "./JarIcon";
 import emmaImage from "/images/avatars/emma-richardson.jpg";
+import { useBudgetData } from "../../hooks/useBudgetData";
 
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
@@ -15,7 +16,7 @@ export const Overview = () => {
   const balanceData = useBalanceData(data?.balance);
   const potsData = usePotsData(data?.pots);
   const transactionsData = useTransactionsData(data?.transactions);
-  // const budgetData = useBudgetData(data?.budgets);
+  const budgetData = useBudgetData(data?.budgets);
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error fetching data</div>;
@@ -209,8 +210,8 @@ export const Overview = () => {
                 <div className="osbc-category-div">
                   <div className="osbc-category-left-border"></div>
                   <div className="osbc-category-container">
-                    <div className="osbc-category">Entertainment</div>
-                    <div className="osbc-category-amount">$50.00</div>
+                    <div className="osbc-category">{budgetData[0].category}</div>
+                    <div className="osbc-category-amount">${budgetData[0].maximum}</div>
                   </div>
                 </div>
                 <div className="osbc-category-div">
