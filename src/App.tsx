@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router";
-import { Sidebar } from "./features/sidebar/Sidebar";
+import { Sidebar } from "./features/Sidebar/Sidebar";
 import { Overview } from "./features/Overview/Overview";
 import { Transaction } from "./features/Transactions/Transactions";
 
