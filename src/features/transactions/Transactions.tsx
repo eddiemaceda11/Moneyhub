@@ -11,7 +11,9 @@ export const Transaction = () => {
             <p>p</p>
           </div>
           <div className="filters-container">
-            <div className="transactions_sort-by"></div>
+            <div className="transactions_sort-by">
+              <p>Sort by</p>
+            </div>
           </div>
         </div>
       </div>
