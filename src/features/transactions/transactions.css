@@ -40,3 +40,11 @@
   border-radius: 8px;
   border: 1px solid var(--secondary-bg-beige);
 }
+
+.transactions-menu .searchbar input {
+  width: 248px;
+  height: 21px;
+  color: var(--secondary-bg-beige);
+  border: none;
+  outline: none;
+}
