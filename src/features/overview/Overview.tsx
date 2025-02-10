@@ -5,8 +5,6 @@ import { useBalanceData } from "../../hooks/useBalanceData";
 import { usePotsData } from "../../hooks/usePotsData";
 import { useTransactionsData } from "../../hooks/useTransactionsData";
 
-import { JarIcon } from "./JarIcon";
-
 import { useBudgetData } from "../../hooks/useBudgetData";
 import { OverviewTransactions } from "./components/OverviewTransactions/OverviewTransaction";
 import { OverviewBudgets } from "./components/OverviewBudgets/OverviewBudgets";
@@ -48,55 +46,7 @@ export const Overview = () => {
         {/* LEFT SIDE OF THE OVERVIEW CONTENT (TOP ON MOBILE) */}
         <div className="additionals-section-left">
           {/* POTS */}
-          <div className="overview-section-pots">
-            <div className="overview-pots-header">
-              <h3>Pots</h3>
-              <p>See Details</p>
-            </div>
-            <div className="overview-pots-info">
-              <div className="ov-pots-total-saved">
-                <JarIcon />
-                <div className="opts-info">
-                  <p>Total Saved</p>
-                  <span>$850</span>
-                </div>
-              </div>
-              <div className="ov-pots-info-boxes">
-                <div className="opib-top">
-                  <div className="opib-top-left">
-                    <div className="opib-border one"></div>
-                    <div className="opib-items">
-                      <p>{potsData[1].name}</p>
-                      <span>${potsData[1].total}</span>
-                    </div>
-                  </div>
-                  <div className="opib-top-right">
-                    <div className="opib-border two"></div>
-                    <div className="opib-items">
-                      <p>{potsData[2].name}</p>
-                      <span>${potsData[2].total}</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="opib-bottom">
-                  <div className="opib-bottom-left">
-                    <div className="opib-border three"></div>
-                    <div className="opib-items">
-                      <p>{potsData[3].name}</p>
-                      <span>${potsData[3].total}</span>
-                    </div>
-                  </div>
-                  <div className="opib-bottom-right">
-                    <div className="opib-border four"></div>
-                    <div className="opib-items">
-                      <p>{potsData[4].name}</p>
-                      <span>${potsData[4].total}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
           {/* TRANSACTIONS */}
           <OverviewTransactions transactionsData={transactionsData} />
         </div>
