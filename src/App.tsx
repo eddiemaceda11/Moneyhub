@@ -5,6 +5,7 @@ import { Overview } from "./features/Overview/Overview";
 import { Transaction } from "./features/Transactions/Transactions";
 import { Budgets } from "./features/Budgets/Budgets";
 import { Pots } from "./features/Pots/Pots";
+import { Recurring } from "./features/Recurring/Recurring";
 
 function App() {
   return (
@@ -29,6 +30,10 @@ function App() {
               <Route
                 path="/pots"
                 element={<Pots />}
+              />
+              <Route
+                path="/recurring"
+                element={<Recurring />}
               />
             </Routes>
           </BrowserRouter>
