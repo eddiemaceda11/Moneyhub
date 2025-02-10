@@ -1,5 +1,5 @@
 import "./transactions.css";
 
 export const Transaction = () => {
-  return <div>Transactions</div>;
+  return <h1 className="transactions-title">Transactions</h1>;
 };
