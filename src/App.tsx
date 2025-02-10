@@ -16,6 +16,10 @@ function App() {
                 path="/"
                 element={<Overview />}
               />
+              <Route
+                path="/transactions"
+                element={<Transaction />}
+              />
             </Routes>
           </BrowserRouter>
         </div>
