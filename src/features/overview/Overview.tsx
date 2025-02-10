@@ -9,6 +9,7 @@ import { useBudgetData } from "../../hooks/useBudgetData";
 import { OverviewTransactions } from "./components/OverviewTransactions/OverviewTransaction";
 import { OverviewBudgets } from "./components/OverviewBudgets/OverviewBudgets";
 import { OverviewPots } from "./components/OverviewPots/OverviewPots";
+import { OverviewRecurring } from "./components/OverviewRecurring/OverviewRecurring";
 
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
@@ -51,32 +52,9 @@ export const Overview = () => {
         </div>
         {/* RIGHT SIDE OF THE OVERVIEW CONTENT (BOTTOM ON MOBILE) */}
         <div className="additionals-section-right">
-          {/* BUDGETS */}
           <OverviewBudgets budgetData={budgetData} />
           {/* RECURRING BILLS */}
-          <div className="overview-section-recurring">
-            <div className="osr-header">
-              <h3>Recurring Bills</h3>
-              <div>
-                <p>See Details</p>
-                <span>x</span>
-              </div>
-            </div>
-            <div className="osr-content">
-              <div>
-                <p>Paid Bills</p>
-                <span>$190.00</span>
-              </div>
-              <div>
-                <p>Total Upcoming</p>
-                <span>$194.98</span>
-              </div>
-              <div>
-                <p>Due Soon</p>
-                <span>$59.48</span>
-              </div>
-            </div>
-          </div>
+          <OverviewRecurring />
         </div>
       </section>
     </>
