@@ -10,6 +10,7 @@ export const Transaction = () => {
             <input type="text" />
             <p>p</p>
           </div>
+          <div className="filters-container"></div>
         </div>
       </div>
     </>
