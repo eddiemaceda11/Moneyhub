@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import { Sidebar } from "./features/Sidebar/Sidebar";
 import { Overview } from "./features/Overview/Overview";
 import { Transaction } from "./features/Transactions/Transactions";
+import { Budgets } from "./features/Budgets/Budgets";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
               <Route
                 path="/transactions"
                 element={<Transaction />}
+              />
+              <Route
+                path="/budgets"
+                element={<Budgets />}
               />
             </Routes>
           </BrowserRouter>
