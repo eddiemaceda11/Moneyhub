@@ -55,3 +55,11 @@
   height: 45px;
   border: 1px solid red;
 }
+
+.transactions_sort-by {
+  display: flex;
+  gap: 8px;
+  width: 170px;
+  height: 45px;
+  border: 1px solid black;
+}
