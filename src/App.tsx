@@ -4,6 +4,7 @@ import { Sidebar } from "./features/Sidebar/Sidebar";
 import { Overview } from "./features/Overview/Overview";
 import { Transaction } from "./features/Transactions/Transactions";
 import { Budgets } from "./features/Budgets/Budgets";
+import { Pots } from "./features/Pots/Pots";
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
               <Route
                 path="/budgets"
                 element={<Budgets />}
+              />
+              <Route
+                path="/pots"
+                element={<Pots />}
               />
             </Routes>
           </BrowserRouter>
