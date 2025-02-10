@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router";
 import { Sidebar } from "./features/sidebar/Sidebar";
-import { Overview } from "./features/overview/Overview";
+import { Overview } from "./features/Overview/Overview";
 import { Transaction } from "./features/transactions/Transactions";
 
 function App() {
