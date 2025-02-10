@@ -47,3 +47,11 @@
   border: none;
   outline: none;
 }
+
+.filters-container {
+  display: flex;
+  gap: 24px;
+  width: 439px;
+  height: 45px;
+  border: 1px solid red;
+}
