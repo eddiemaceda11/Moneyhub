@@ -8,6 +8,7 @@ import { useTransactionsData } from "../../hooks/useTransactionsData";
 import { useBudgetData } from "../../hooks/useBudgetData";
 import { OverviewTransactions } from "./components/OverviewTransactions/OverviewTransaction";
 import { OverviewBudgets } from "./components/OverviewBudgets/OverviewBudgets";
+import { OverviewPots } from "./components/OverviewPots/OverviewPots";
 
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
@@ -46,7 +47,7 @@ export const Overview = () => {
         {/* LEFT SIDE OF THE OVERVIEW CONTENT (TOP ON MOBILE) */}
         <div className="additionals-section-left">
           {/* POTS */}
-
+          <OverviewPots potsData={potsData} />
           {/* TRANSACTIONS */}
           <OverviewTransactions transactionsData={transactionsData} />
         </div>
