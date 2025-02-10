@@ -46,12 +46,9 @@ export const Overview = () => {
       <section className="additionals-section">
         {/* LEFT SIDE OF THE OVERVIEW CONTENT (TOP ON MOBILE) */}
         <div className="additionals-section-left">
-          {/* POTS */}
           <OverviewPots potsData={potsData} />
-          {/* TRANSACTIONS */}
           <OverviewTransactions transactionsData={transactionsData} />
         </div>
-
         {/* RIGHT SIDE OF THE OVERVIEW CONTENT (BOTTOM ON MOBILE) */}
         <div className="additionals-section-right">
           {/* BUDGETS */}
