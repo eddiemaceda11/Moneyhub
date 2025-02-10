@@ -11,7 +11,12 @@ function App() {
       <main>
         <div className="main-container">
           <BrowserRouter>
-            <Routes></Routes>
+            <Routes>
+              <Route
+                path="/"
+                element={<Overview />}
+              />
+            </Routes>
           </BrowserRouter>
         </div>
       </main>
