@@ -8,6 +8,7 @@ export const Transaction = () => {
         <div className="transactions-menu">
           <div className="searchbar">
             <input type="text" />
+            <p>p</p>
           </div>
         </div>
       </div>
