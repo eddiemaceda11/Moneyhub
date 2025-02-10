@@ -58,6 +58,7 @@
 
 .transactions_sort-by {
   display: flex;
+  align-items: center;
   gap: 8px;
   width: 170px;
   height: 45px;
