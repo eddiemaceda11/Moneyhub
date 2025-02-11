@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { overviewApi } from "./services/overviewApi";
 
 // import overviewReducer from "./features/Overview/overviewSlice";
-import overviewReducer from "./features/overview/overviewSlice";
+import overviewReducer from "./features/overviewr/overviewSlice";
 
 export const store = configureStore({
   reducer: {
