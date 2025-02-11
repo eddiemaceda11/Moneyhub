@@ -1,4 +1,4 @@
-import { JarIcon } from "../../../overviewr/JarIcon";
+import { JarIcon } from "../../JarIcon";
 
 export const OverviewPots = ({ potsData }: any) => {
   return (
