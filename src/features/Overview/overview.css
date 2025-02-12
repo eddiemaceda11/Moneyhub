@@ -285,8 +285,15 @@
   height: 47px;
 }
 
-.overview-transactions-info div .oti-right p {
+.overview-transactions-info div .oti-right p.positive-transaction {
   color: var(--color-dark-green);
+  font-size: 14px;
+  line-height: 150%;
+  font-weight: var(--font-bold);
+}
+
+.overview-transactions-info div .oti-right p.negative-transaction {
+  color: rgb(210, 55, 55);
   font-size: 14px;
   line-height: 150%;
   font-weight: var(--font-bold);
