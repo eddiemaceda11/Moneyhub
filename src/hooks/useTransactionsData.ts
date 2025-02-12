@@ -9,7 +9,6 @@ type Transaction = {
 };
 
 export const useTransactionsData = (transactions?: Transaction[]) => {
-  console.log("trans: ", transactions);
   if (!transactions)
     return {
       amount: 0,
