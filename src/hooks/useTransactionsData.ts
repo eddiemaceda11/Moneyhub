@@ -1,5 +1,5 @@
 import { formatCurrency } from "../utils/formatters";
-type Transaction = {
+export type Transaction = {
   amount: string;
   avatar: string;
   category: string;
