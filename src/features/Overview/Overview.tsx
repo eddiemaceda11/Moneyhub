@@ -14,7 +14,7 @@ import { OverviewRecurring } from "./components/OverviewRecurring/OverviewRecurr
 export const Overview = () => {
   const { data, error, isLoading } = useGetOverviewQuery(undefined);
 
-  console.log(data);
+  // console.log(data);
   const balanceData = useBalanceData(data?.balance);
   const potsData = usePotsData(data?.pots);
   const transactionsData = useTransactionsData(data?.transactions);
