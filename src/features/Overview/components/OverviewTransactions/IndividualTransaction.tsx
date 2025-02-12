@@ -4,6 +4,17 @@ export const IndividualTransaction = ({ transactionsData }: any) => {
     return image.slice(8);
   }
 
+  function checkIfAmountIsNegative(amount: string) {
+    const firstCharOfString = amount.split("").shift();
+    if (firstCharOfString === "-") {
+      let modifiedAmount = amount.slice(0, 1) + "$" + amount.slice(1);
+      return <p className="negative-transaction">{modifiedAmount}</p>;
+    } else {
+      let modifiedAmount = "+$" + amount;
+      return <p className="positive-transaction">{modifiedAmount}</p>;
+    }
+  }
+
   return (
     <>
       <div>
@@ -15,7 +26,7 @@ export const IndividualTransaction = ({ transactionsData }: any) => {
           <p>{transactionsData.name}</p>
         </div>
         <div className="oti-right">
-          <p>+79.80</p>
+          {checkIfAmountIsNegative(transactionsData.amount)}
           <span>19 Aug 2024</span>
         </div>
       </div>
