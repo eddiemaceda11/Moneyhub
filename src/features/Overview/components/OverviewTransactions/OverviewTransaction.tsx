@@ -4,7 +4,12 @@ export const OverviewTransactions = ({ transactionsData }: any) => {
   const overviewTransactions = transactionsData.slice(0, 5);
 
   const renderedOverviewTransactions = overviewTransactions.map((transaction: any) => {
-    return <IndividualTransaction transactionsData={transaction} />;
+    return (
+      <IndividualTransaction
+        transactionsData={transaction}
+        key={transaction.name}
+      />
+    );
   });
 
   return (
