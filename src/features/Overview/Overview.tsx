@@ -54,7 +54,6 @@ export const Overview = () => {
         {/* RIGHT SIDE OF THE OVERVIEW CONTENT (BOTTOM ON MOBILE) */}
         <div className="additionals-section-right">
           <OverviewBudgets budgetData={budgetData} />
-          {/* RECURRING BILLS */}
           <OverviewRecurring />
         </div>
       </section>
