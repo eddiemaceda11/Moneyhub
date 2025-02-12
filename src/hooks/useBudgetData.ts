@@ -1,6 +1,6 @@
 import { formatCurrency } from "../utils/formatters";
 
-type Budget = {
+export type Budget = {
   category: string;
   maximum: string;
   theme: string;
