@@ -1,10 +1,10 @@
 import { formatCurrency } from "../utils/formatters";
 
-interface Balance {
+type Balance = {
   current: string;
   expenses: string;
   income: string;
-}
+};
 
 export const useBalanceData = (balance?: Balance) => {
   if (!balance) {
