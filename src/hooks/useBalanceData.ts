@@ -1,6 +1,6 @@
 import { formatCurrency } from "../utils/formatters";
 
-type Balance = {
+export type Balance = {
   current: string;
   expenses: string;
   income: string;
