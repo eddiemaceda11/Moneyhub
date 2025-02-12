@@ -1,6 +1,6 @@
 import { formatCurrency } from "../utils/formatters";
 
-type Pots = {
+export type Pots = {
   name: string;
   target: string;
   theme: string;
