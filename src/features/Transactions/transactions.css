@@ -135,6 +135,7 @@
 }
 
 /* TABLE HEADER */
+/* TODO -- convert widths fron px to % for responsiveness */
 .transactions_table-header {
   display: flex;
   gap: 32px;
