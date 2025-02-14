@@ -34,6 +34,7 @@
   justify-content: space-between;
   gap: 12px;
   width: 320px;
+  width: 30.19%;
   height: 45px;
   padding: 12px 20px;
   border-radius: 8px;
@@ -52,8 +53,9 @@
   display: flex;
   gap: 24px;
   width: 439px;
+  width: 44.12%;
   height: 45px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 .transactions_sort-by {
@@ -78,7 +80,7 @@
   width: 113px;
   height: 45px;
   padding: 12px 20px;
-  border-radius: 12px;
+  border-radius: 8px;
   -moz-appearance: none; /*Remove the default DD arrow*/
 
   /* for Safari, Chrome, Opera */
