@@ -41,7 +41,7 @@ export const Transaction = () => {
         </div>
 
         {/* TABLE HEADER */}
-        <div>
+        <div className="transactions_table-header">
           <p>Recipient/Sender</p>
           <p>Category</p>
           <p>Transaction Date</p>
