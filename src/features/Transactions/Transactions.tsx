@@ -59,6 +59,7 @@ export const Transaction = () => {
               <p>Emma Richardson</p>
             </div>
             <p className="transactions_category">General</p>
+            <p className="transaction_date">07 Feb 2025</p>
           </div>
         </div>
       </div>
