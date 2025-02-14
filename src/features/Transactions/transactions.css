@@ -164,3 +164,13 @@
   text-align: left;
   color: red;
 }
+
+.transactions_table-header p:nth-child(3) {
+  width: 120px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  text-align: left;
+  color: red;
+}
