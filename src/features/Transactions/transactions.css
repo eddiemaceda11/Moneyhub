@@ -79,6 +79,7 @@
   height: 45px;
   padding: 12px 20px;
   border-radius: 8px;
+  border: 1px solid var(--secondary-bg-beige);
   color: var(--color-grey-900);
   font-size: 14px;
   line-height: 150%;
@@ -109,6 +110,7 @@
   height: 45px;
   padding: 12px 20px;
   border-radius: 8px;
+  border: 1px solid var(--secondary-bg-beige);
   color: var(--color-grey-900);
   font-size: 14px;
   line-height: 150%;
