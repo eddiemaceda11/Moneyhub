@@ -58,6 +58,7 @@ export const Transaction = () => {
               />
               <p>Emma Richardson</p>
             </div>
+            <p className="transactions_category"></p>
           </div>
         </div>
       </div>
