@@ -205,3 +205,10 @@
   height: 40px;
   padding: 16px;
 }
+
+.recipient_sender {
+  display: flex;
+  gap: 16px;
+  width: 428px;
+  height: 40px;
+}
