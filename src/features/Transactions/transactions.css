@@ -208,6 +208,7 @@
 
 .recipient_sender {
   display: flex;
+  align-items: center;
   gap: 16px;
   width: 428px;
   height: 40px;
