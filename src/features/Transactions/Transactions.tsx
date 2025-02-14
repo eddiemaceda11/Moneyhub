@@ -5,6 +5,7 @@ export const Transaction = () => {
     <>
       <h1 className="transactions-title">Transactions</h1>
       <div className="transactions-content-container">
+        {/* TOP MENU */}
         <div className="transactions-menu">
           <div className="searchbar">
             <input type="text" />
@@ -38,6 +39,8 @@ export const Transaction = () => {
             </div>
           </div>
         </div>
+
+        {/* TABLE HEADER */}
       </div>
     </>
   );
