@@ -252,3 +252,14 @@
   text-align: left;
   color: var(--color-grey-500);
 }
+
+.transaction_amount {
+  width: 200px;
+  height: 21px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: bold;
+  text-align: right;
+  color: var();
+}
