@@ -53,7 +53,7 @@
   gap: 24px;
   width: 439px;
   height: 45px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .transactions_sort-by {
@@ -62,7 +62,7 @@
   gap: 8px;
   width: 170px;
   height: 45px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .transactions_sort-by p {
