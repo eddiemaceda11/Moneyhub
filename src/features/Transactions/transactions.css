@@ -187,6 +187,7 @@
 }
 
 /* TRANSACTIONS TABLE */
+/* TODO -- convert widths fron px to % for responsiveness */
 .transactions_table {
   /* width: 996px; */
   display: flex;
