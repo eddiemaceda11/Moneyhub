@@ -218,3 +218,13 @@
   height: 40px;
   border: 1px solid red;
 }
+
+.recipient_sender p {
+  width: 121px;
+  height: 21px;
+  font-size: 14px;
+  font-weight: var(--font-bold);
+  line-height: 150%;
+  letter-spacing: 0px;
+  color: var(--color-grey-900);
+}
