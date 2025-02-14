@@ -200,6 +200,7 @@
 
 .transactions_table--transaction {
   display: flex;
+  align-items: center;
   gap: 32px;
   /* width: 996px; */
   width: 100%;
@@ -231,4 +232,11 @@
   line-height: 150%;
   letter-spacing: 0px;
   color: var(--color-grey-900);
+}
+
+.transactions_category {
+  width: 120px;
+  height: 18px;
+  text-align: left;
+  border: 1px solid purple;
 }
