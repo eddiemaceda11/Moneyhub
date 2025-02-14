@@ -242,3 +242,13 @@
   text-align: left;
   color: var(--color-grey-500);
 }
+
+.transaction_date {
+  width: 120px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  text-align: left;
+  color: var(--color-grey-500);
+}
