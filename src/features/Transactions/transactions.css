@@ -152,7 +152,6 @@
   line-height: 150%;
   letter-spacing: 0px;
   text-align: left;
-  color: red;
 }
 
 .transactions_table-header p:nth-child(2) {
@@ -162,7 +161,6 @@
   line-height: 150%;
   letter-spacing: 0px;
   text-align: left;
-  color: red;
 }
 
 .transactions_table-header p:nth-child(3) {
@@ -172,7 +170,6 @@
   line-height: 150%;
   letter-spacing: 0px;
   text-align: left;
-  color: red;
 }
 
 .transactions_table-header p:nth-child(4) {
@@ -182,5 +179,4 @@
   line-height: 150%;
   letter-spacing: 0px;
   text-align: right;
-  color: red;
 }
