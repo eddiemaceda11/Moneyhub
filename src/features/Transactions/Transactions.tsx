@@ -58,7 +58,7 @@ export const Transaction = () => {
               />
               <p>Emma Richardson</p>
             </div>
-            <p className="transactions_category"></p>
+            <p className="transactions_category">General</p>
           </div>
         </div>
       </div>
