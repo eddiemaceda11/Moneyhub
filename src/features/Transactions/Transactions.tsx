@@ -60,6 +60,7 @@ export const Transaction = () => {
             </div>
             <p className="transactions_category">General</p>
             <p className="transaction_date">07 Feb 2025</p>
+            <p className="transaction_amount">+$75.50</p>
           </div>
         </div>
       </div>
