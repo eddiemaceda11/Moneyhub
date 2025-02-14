@@ -25,6 +25,17 @@ export const Transaction = () => {
                 <option value="lowest">Lowest</option>
               </select>
             </div>
+            <div className="transactions_categories">
+              <p>Category</p>
+              <select>
+                <option value="all">All Transactions</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="groceries">Groceries</option>
+                <option value="bills">Bills</option>
+                <option value="dining">Dining out</option>
+                <option value="personal">Personal care</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
