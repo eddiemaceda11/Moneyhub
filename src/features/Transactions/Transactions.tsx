@@ -47,6 +47,8 @@ export const Transaction = () => {
           <p>Transaction Date</p>
           <p>Amount</p>
         </div>
+
+        {/* TRANSACTIONS TABLE */}
       </div>
     </>
   );
