@@ -99,3 +99,21 @@
   width: 245px;
   height: 45px;
 }
+
+.transactions_categories select {
+  display: flex;
+  gap: 4px;
+  width: 177px;
+  height: 45px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  -moz-appearance: none; /*Remove the default DD arrow*/
+
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none; /*Remove the default DD arrow*/
+}
+
+.transactions_categories select::-ms-expand {
+  /*Remove the default DD arrow in Firefox*/
+  display: none;
+}
