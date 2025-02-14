@@ -89,3 +89,11 @@
   /*Remove the default DD arrow in Firefox*/
   display: none;
 }
+
+.transactions_categories {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 245px;
+  height: 45px;
+}
