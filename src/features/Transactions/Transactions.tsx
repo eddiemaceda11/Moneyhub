@@ -41,6 +41,12 @@ export const Transaction = () => {
         </div>
 
         {/* TABLE HEADER */}
+        <div>
+          <p>Recipient/Sender</p>
+          <p>Category</p>
+          <p>Transaction Date</p>
+          <p>Amount</p>
+        </div>
       </div>
     </>
   );
