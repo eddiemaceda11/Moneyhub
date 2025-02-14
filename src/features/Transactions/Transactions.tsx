@@ -49,6 +49,7 @@ export const Transaction = () => {
         </div>
 
         {/* TRANSACTIONS TABLE */}
+        <div className="transactions_table"></div>
       </div>
     </>
   );
