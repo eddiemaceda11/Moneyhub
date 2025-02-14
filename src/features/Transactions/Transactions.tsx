@@ -50,7 +50,15 @@ export const Transaction = () => {
 
         {/* TRANSACTIONS TABLE */}
         <div className="transactions_table">
-          <div className="transactions_table--transaction">{/* <div className="recipient_sender"></div> */}</div>
+          <div className="transactions_table--transaction">
+            <div className="recipient_sender">
+              <img
+                src=""
+                alt=""
+              />
+              <p>Emma Richardson</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
