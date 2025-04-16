@@ -81,7 +81,7 @@ export const Transaction = () => {
           </div>
           <div className='transactions_nav--button-container'>
             <button>
-              <span>→</span> Next
+              Next <span>→</span>
             </button>
           </div>
         </div>
