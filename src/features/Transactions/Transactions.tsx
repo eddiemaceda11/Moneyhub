@@ -64,6 +64,27 @@ export const Transaction = () => {
             <p className='transaction_amount'>+$75.50</p>
           </div>
         </div>
+
+        {/* TRANSACTIONS TABLE NAVIGATION */}
+        <div className='transactions_table--navigation'>
+          <div className='transactions_nav--button'>
+            <button>
+              <span>←</span> Prev
+            </button>
+          </div>
+          <div className='transaction_nav--pages'>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>4</button>
+            <button>5</button>
+          </div>
+          <div className='transactions_nav--button'>
+            <button>
+              <span>→</span> Next
+            </button>
+          </div>
+        </div>
       </div>
     </>
   );
