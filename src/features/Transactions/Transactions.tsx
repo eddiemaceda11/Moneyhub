@@ -67,7 +67,7 @@ export const Transaction = () => {
 
         {/* TRANSACTIONS TABLE NAVIGATION */}
         <div className='transactions_table--navigation'>
-          <div className='transactions_nav--button'>
+          <div className='transactions_nav--button-container'>
             <button>
               <span>←</span> Prev
             </button>
@@ -79,7 +79,7 @@ export const Transaction = () => {
             <button>4</button>
             <button>5</button>
           </div>
-          <div className='transactions_nav--button'>
+          <div className='transactions_nav--button-container'>
             <button>
               <span>→</span> Next
             </button>
