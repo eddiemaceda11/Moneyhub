@@ -309,4 +309,22 @@
 }
 
 .transaction_nav--pages button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 16px;
+  color: var(--color-grey-900);
+  background-color: var(--color-p-white);
+  border: 2px solid var(--secondary-bg-beige);
+  border-radius: 8px;
+  font-weight: 14px;
+  line-height: 150%;
+}
+
+.transaction_nav--pages button:hover {
+  color: var(--color-p-white);
+  background-color: var(--color-grey-900);
+  border: 2px solid var(--color-grey-900);
 }
