@@ -263,3 +263,50 @@
   text-align: right;
   color: var();
 }
+
+.transactions_table--navigation {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  height: 64px;
+}
+
+.transactions_nav--button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94px;
+  height: 40px;
+  padding: 16px;
+  border: 1px solid var(--secondary-bg-beige);
+  border-radius: 8px;
+}
+
+.transactions_nav--button-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 30px;
+  height: 21px;
+  padding: 0px;
+  background-color: var(--color-p-white);
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.transactions_nav--button-container button span {
+}
+
+.transaction_nav--pages {
+  display: flex;
+  gap: 8px;
+  width: 232px;
+  height: 40px;
+  border: 1px solid red;
+}
+
+.transaction_nav--pages button {
+}
