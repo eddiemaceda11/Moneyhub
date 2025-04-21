@@ -208,6 +208,18 @@
   padding: 16px;
 }
 
+/* .transactions_table--transaction:nth-child(1) {
+  background-color: blue;
+} */
+
+.transaction_table--horizontal-line {
+  /* width: 996px; */
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-grey-100);
+  border: none;
+}
+
 .recipient_sender {
   display: flex;
   align-items: center;
