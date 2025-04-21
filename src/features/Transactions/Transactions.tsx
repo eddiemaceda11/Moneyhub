@@ -63,6 +63,8 @@ export const Transaction = () => {
             <p className='transaction_date'>07 Feb 2025</p>
             <p className='transaction_amount'>+$75.50</p>
           </div>
+          {/* Transaction Horizontal line */}
+          <hr className='transaction_table--horizontal-line'></hr>
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
@@ -75,6 +77,7 @@ export const Transaction = () => {
             <p className='transaction_date'>07 Feb 2025</p>
             <p className='transaction_amount'>+$75.50</p>
           </div>
+          <hr className='transaction_table--horizontal-line'></hr>
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
@@ -87,6 +90,7 @@ export const Transaction = () => {
             <p className='transaction_date'>07 Feb 2025</p>
             <p className='transaction_amount'>+$75.50</p>
           </div>
+          <hr className='transaction_table--horizontal-line'></hr>
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
@@ -99,6 +103,7 @@ export const Transaction = () => {
             <p className='transaction_date'>07 Feb 2025</p>
             <p className='transaction_amount'>+$75.50</p>
           </div>
+          <hr className='transaction_table--horizontal-line'></hr>
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
@@ -111,6 +116,7 @@ export const Transaction = () => {
             <p className='transaction_date'>07 Feb 2025</p>
             <p className='transaction_amount'>+$75.50</p>
           </div>
+          <hr className='transaction_table--horizontal-line'></hr>
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
@@ -123,6 +129,7 @@ export const Transaction = () => {
             <p className='transaction_date'>07 Feb 2025</p>
             <p className='transaction_amount'>+$75.50</p>
           </div>
+          <hr className='transaction_table--horizontal-line'></hr>
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
@@ -135,6 +142,7 @@ export const Transaction = () => {
             <p className='transaction_date'>07 Feb 2025</p>
             <p className='transaction_amount'>+$75.50</p>
           </div>
+          <hr className='transaction_table--horizontal-line'></hr>
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
@@ -147,6 +155,7 @@ export const Transaction = () => {
             <p className='transaction_date'>07 Feb 2025</p>
             <p className='transaction_amount'>+$75.50</p>
           </div>
+          <hr className='transaction_table--horizontal-line'></hr>
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
@@ -159,18 +168,7 @@ export const Transaction = () => {
             <p className='transaction_date'>07 Feb 2025</p>
             <p className='transaction_amount'>+$75.50</p>
           </div>
-          <div className='transactions_table--transaction'>
-            <div className='recipient_sender'>
-              <img
-                src=''
-                alt=''
-              />
-              <p>Emma Richardson</p>
-            </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
-          </div>
+          <hr className='transaction_table--horizontal-line'></hr>
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
