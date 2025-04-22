@@ -9,7 +9,7 @@ export const Transaction = () => {
         <div className='transactions-menu'>
           <div className='searchbar'>
             <input type='text' />
-            <p>p</p>
+            <i className='fa-solid fa-magnifying-glass'></i>
           </div>
           <div className='filters-container'>
             <div className='transactions_sort-by'>
