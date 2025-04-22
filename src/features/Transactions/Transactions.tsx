@@ -57,129 +57,137 @@ export const Transaction = () => {
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Aiden Murphy</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Groceries</p>
+            <p className='transaction_date'>18 Jan 2025</p>
+            <p className='transaction_amount'>-$42.90</p>
           </div>
-          {/* Transaction Horizontal line */}
           <hr className='transaction_table--horizontal-line'></hr>
+
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Jasmine Lee</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Dining</p>
+            <p className='transaction_date'>03 Mar 2025</p>
+            <p className='transaction_amount'>-$28.75</p>
           </div>
           <hr className='transaction_table--horizontal-line'></hr>
+
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Leo Patterson</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Utilities</p>
+            <p className='transaction_date'>15 Feb 2025</p>
+            <p className='transaction_amount'>-$120.00</p>
           </div>
           <hr className='transaction_table--horizontal-line'></hr>
+
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Sophia Wang</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Travel</p>
+            <p className='transaction_date'>28 Jan 2025</p>
+            <p className='transaction_amount'>-$350.00</p>
           </div>
           <hr className='transaction_table--horizontal-line'></hr>
+
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Ethan Cruz</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Income</p>
+            <p className='transaction_date'>10 Feb 2025</p>
+            <p className='transaction_amount'>+$1,200.00</p>
           </div>
           <hr className='transaction_table--horizontal-line'></hr>
+
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Maya Bennett</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Health</p>
+            <p className='transaction_date'>20 Mar 2025</p>
+            <p className='transaction_amount'>-$60.25</p>
           </div>
           <hr className='transaction_table--horizontal-line'></hr>
+
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Nathan Kim</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Shopping</p>
+            <p className='transaction_date'>01 Feb 2025</p>
+            <p className='transaction_amount'>-$89.99</p>
           </div>
           <hr className='transaction_table--horizontal-line'></hr>
+
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Chloe Martinez</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Subscriptions</p>
+            <p className='transaction_date'>22 Feb 2025</p>
+            <p className='transaction_amount'>-$14.99</p>
           </div>
           <hr className='transaction_table--horizontal-line'></hr>
+
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Lucas Anderson</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Entertainment</p>
+            <p className='transaction_date'>05 Mar 2025</p>
+            <p className='transaction_amount'>-$47.50</p>
           </div>
           <hr className='transaction_table--horizontal-line'></hr>
+
           <div className='transactions_table--transaction'>
             <div className='recipient_sender'>
               <img
                 src=''
                 alt=''
               />
-              <p>Emma Richardson</p>
+              <p>Lily Thompson</p>
             </div>
-            <p className='transactions_category'>General</p>
-            <p className='transaction_date'>07 Feb 2025</p>
-            <p className='transaction_amount'>+$75.50</p>
+            <p className='transactions_category'>Salary</p>
+            <p className='transaction_date'>01 Mar 2025</p>
+            <p className='transaction_amount'>+$2,500.00</p>
           </div>
         </div>
 
