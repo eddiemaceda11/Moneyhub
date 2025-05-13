@@ -119,11 +119,11 @@ export const Transaction = () => {
                       src=''
                       alt=''
                     />
-                    <p>Aiden Murphy</p>
+                    <p>{transaction.name}</p>
                   </div>
-                  <p className='transactions_category'>Groceries</p>
-                  <p className='transaction_date'>18 Jan 2025</p>
-                  <p className='transaction_amount'>-$42.90</p>
+                  <p className='transactions_category'>{transaction.category}</p>
+                  <p className='transaction_date'>{transaction.date}</p>
+                  <p className='transaction_amount'>{transaction.amount}</p>
                 </div>
                 <hr className='transaction_table--horizontal-line'></hr>
               </>
