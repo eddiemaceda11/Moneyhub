@@ -92,8 +92,14 @@ export const Transaction = () => {
         sortedArray = tempSortedArray.reverse();
         setFilteredTransactions(sortedArray);
         break;
-      // case 'lowest':
-      //   sortedArray = filteredTransactions.sort((a, b) => convertCurrenciesToNumbers(a.amount) - convertCurrenciesToNumbers(b.amount));
+      case 'lowest':
+        sortedArray = filteredTransactions.sort((a, b) => a.amount - b.amount);
+        setFilteredTransactions(sortedArray);
+        break;
+      case 'highest':
+        sortedArray = filteredTransactions.sort((a, b) => b.amount - a.amount);
+        setFilteredTransactions(sortedArray);
+        break;
     }
   };
 
