@@ -1,5 +1,6 @@
 import './transactions.css';
 import { useState } from 'react';
+import { formatCurrency } from '../../utils/formatters';
 
 const transactions = [
   { name: 'Aiden Murphy', category: 'Groceries', date: '18 Jan 2025', amount: -42.9 },
@@ -164,7 +165,7 @@ export const Transaction = () => {
                   </div>
                   <p className='transactions_category'>{transaction.category}</p>
                   <p className='transaction_date'>{transaction.date}</p>
-                  <p className='transaction_amount'>{transaction.amount}</p>
+                  <p className='transaction_amount'>{formatCurrency(transaction.amount)}</p>
                 </div>
                 <hr className='transaction_table--horizontal-line'></hr>
               </>
