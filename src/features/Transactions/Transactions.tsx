@@ -58,6 +58,9 @@ export const Transaction = () => {
   const [filteredTransactions, setFilteredTransactions] = useState(transactions);
   const [sortBy, setSortBy] = useState('latest'); // latest, oldest, az, za, highest, lowest
 
+  /*************************/
+  /*** Helper functions ****/
+  /*************************/
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = event.target.value;
     setSearchTransaction(newValue);
@@ -73,14 +76,20 @@ export const Transaction = () => {
 
   const updateSortBy = (sortOption: string) => {
     setSortBy(sortOption);
-    console.log(sortOption);
+    let sortedArray;
 
     switch (sortOption) {
       case 'az':
-        console.log('az hit');
-        let sortedArray = filteredTransactions.sort((a, b) => a.name.localeCompare(b.name));
+        sortedArray = filteredTransactions.sort((a, b) => a.name.localeCompare(b.name));
         setFilteredTransactions(sortedArray);
         break;
+      case 'za':
+        let tempSortedArray = filteredTransactions.sort((a, b) => a.name.localeCompare(b.name));
+        sortedArray = tempSortedArray.reverse();
+        setFilteredTransactions(sortedArray);
+        break;
+      // case 'lowest':
+      //   sortedArray = filteredTransactions.sort((a, b) => convertCurrenciesToNumbers(a.amount) - convertCurrenciesToNumbers(b.amount));
     }
   };
 
