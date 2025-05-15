@@ -79,6 +79,9 @@ export const Transaction = () => {
     let sortedArray;
 
     switch (sortOption) {
+      case 'latest':
+        setFilteredTransactions(transactions);
+        break;
       case 'az':
         sortedArray = filteredTransactions.sort((a, b) => a.name.localeCompare(b.name));
         setFilteredTransactions(sortedArray);
