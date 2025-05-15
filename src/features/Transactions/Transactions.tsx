@@ -55,9 +55,19 @@ const transactions = [
 
 export const Transaction = () => {
   const [searchTransaction, setSearchTransaction] = useState('');
+  const [filteredTransactions, setFilteredTransactions] = useState(transactions);
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    console.log(event.target.value);
+    const newValue = event.target.value;
+    setSearchTransaction(newValue);
+    console.log(newValue);
+
+    // Filter transactions based on the search input
+    const filtered = transactions.filter((transaction) => {
+      return transaction.name.toLowerCase().includes(newValue.toLowerCase());
+    });
+
+    setFilteredTransactions(filtered);
   };
 
   return (
@@ -67,7 +77,11 @@ export const Transaction = () => {
         {/* TOP MENU */}
         <div className='transactions-menu'>
           <div className='searchbar'>
-            <input type='text' />
+            <input
+              type='text'
+              onChange={handleSearchChange}
+              value={searchTransaction}
+            />
             <i className='fa-solid fa-magnifying-glass'></i>
           </div>
           <div className='filters-container'>
@@ -110,7 +124,7 @@ export const Transaction = () => {
         {/* TRANSACTIONS TABLE */}
         <div className='transactions_table'>
           {/* INDIVIDUAL TRANSACTION */}
-          {transactions.map((transaction, index) => {
+          {filteredTransactions.map((transaction, index) => {
             return (
               <>
                 <div className='transactions_table--transaction'>
