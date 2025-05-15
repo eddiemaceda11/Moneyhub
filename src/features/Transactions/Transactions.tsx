@@ -56,6 +56,7 @@ const transactions = [
 export const Transaction = () => {
   const [searchTransaction, setSearchTransaction] = useState('');
   const [filteredTransactions, setFilteredTransactions] = useState(transactions);
+  const [sortBy, setSortBy] = useState('latest'); // latest, oldest, az, za, highest, lowest
 
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = event.target.value;
@@ -68,6 +69,19 @@ export const Transaction = () => {
     });
 
     setFilteredTransactions(filtered);
+  };
+
+  const updateSortBy = (sortOption: string) => {
+    setSortBy(sortOption);
+    console.log(sortOption);
+
+    switch (sortOption) {
+      case 'az':
+        console.log('az hit');
+        let sortedArray = filteredTransactions.sort((a, b) => a.name.localeCompare(b.name));
+        setFilteredTransactions(sortedArray);
+        break;
+    }
   };
 
   return (
@@ -90,6 +104,7 @@ export const Transaction = () => {
               <select
                 name=''
                 id=''
+                onChange={(e) => updateSortBy(e.target.value)}
               >
                 <option value='latest'>Latest</option>
                 <option value='oldest'>Oldest</option>
