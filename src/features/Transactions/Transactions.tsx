@@ -1,6 +1,7 @@
 import './transactions.css';
 import { useState } from 'react';
 import { formatCurrency } from '../../utils/formatters';
+import { transactionsSortBy } from './utils/transactionsSortBy';
 
 const transactions = [
   { name: 'Aiden Murphy', category: 'Groceries', date: '18 Jan 2025', amount: -42.9 },
@@ -75,34 +76,6 @@ export const Transaction = () => {
     setFilteredTransactions(filtered);
   };
 
-  const updateSortBy = (sortOption: string) => {
-    setSortBy(sortOption);
-    let sortedArray;
-
-    switch (sortOption) {
-      case 'latest':
-        setFilteredTransactions(transactions);
-        break;
-      case 'az':
-        sortedArray = filteredTransactions.sort((a, b) => a.name.localeCompare(b.name));
-        setFilteredTransactions(sortedArray);
-        break;
-      case 'za':
-        let tempSortedArray = filteredTransactions.sort((a, b) => a.name.localeCompare(b.name));
-        sortedArray = tempSortedArray.reverse();
-        setFilteredTransactions(sortedArray);
-        break;
-      case 'lowest':
-        sortedArray = filteredTransactions.sort((a, b) => a.amount - b.amount);
-        setFilteredTransactions(sortedArray);
-        break;
-      case 'highest':
-        sortedArray = filteredTransactions.sort((a, b) => b.amount - a.amount);
-        setFilteredTransactions(sortedArray);
-        break;
-    }
-  };
-
   return (
     <>
       <h1 className='transactions-title'>Transactions</h1>
@@ -123,7 +96,7 @@ export const Transaction = () => {
               <select
                 name=''
                 id=''
-                onChange={(e) => updateSortBy(e.target.value)}
+                onChange={(e) => transactionsSortBy(e.target.value, setFilteredTransactions, filteredTransactions, transactions)}
               >
                 <option value='latest'>Latest</option>
                 <option value='oldest'>Oldest</option>
