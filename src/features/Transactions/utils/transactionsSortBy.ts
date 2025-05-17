@@ -6,12 +6,15 @@ export const transactionsSortBy = (sortOption: string, setFilteredTransactions: 
   console.log(sortOption);
 
   switch (sortOption) {
-    case 'latest':
+    case 'all': {
       if (transactions) setFilteredTransactions([...transactions]);
       break;
+    }
+    case 'latest':
+      //  TODO - sort by latest
+      break;
     case 'oldest':
-      if (transactions) {
-      }
+      // TODO - sort by oldest
       break;
     case 'az':
       sortedArray = filteredTransactions?.sort((a, b) => a.name.localeCompare(b.name));
