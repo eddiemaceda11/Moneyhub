@@ -45,7 +45,13 @@ export const Transaction = () => {
               <select
                 name=''
                 id=''
-                onChange={(e) => transactionsSortBy(e.target.value, setFilteredTransactions, filteredTransactions, transactions)}
+                onChange={(e) => {
+                  if (e.target.value === 'all') {
+                    setFilteredTransactions(transactions);
+                  } else {
+                    setFilteredTransactions(transactionsSortBy(e.target.value, filteredTransactions));
+                  }
+                }}
               >
                 <option value='latest'>Latest</option>
                 <option value='oldest'>Oldest</option>
