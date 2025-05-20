@@ -31,15 +31,15 @@ export const Overview = () => {
       <div className='overview-info-container'>
         <div>
           <h4>Current Balance</h4>
-          <p>${balanceData.current}</p>
+          <p>{balanceData.current}</p>
         </div>
         <div>
           <h4>Income</h4>
-          <p>${balanceData.income}</p>
+          <p>{balanceData.income}</p>
         </div>
         <div>
           <h4>Expenses</h4>
-          <p>${balanceData.expenses}</p>
+          <p>{balanceData.expenses}</p>
         </div>
       </div>
 
