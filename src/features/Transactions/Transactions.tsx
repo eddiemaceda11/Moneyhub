@@ -2,6 +2,7 @@ import './transactions.css';
 import { useState } from 'react';
 import { formatCurrency } from '../../utils/formatters';
 import { transactionsSortBy } from './utils/transactionsSortBy';
+import { selectedCategory } from './utils/transactionsSelectedCategory';
 import { transactions } from './transactionsData';
 
 export const Transaction = () => {
@@ -63,7 +64,15 @@ export const Transaction = () => {
             </div>
             <div className='transactions_categories'>
               <p>Category</p>
-              <select>
+              <select
+                onChange={(e) => {
+                  if (e.target.value === 'all') {
+                    setFilteredTransactions(transactions);
+                  } else {
+                    setFilteredTransactions(selectedCategory(e.target.value, filteredTransactions));
+                  }
+                }}
+              >
                 <option value='all'>All Transactions</option>
                 <option value='entertainment'>Entertainment</option>
                 <option value='groceries'>Groceries</option>
