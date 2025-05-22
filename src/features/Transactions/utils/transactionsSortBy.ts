@@ -1,6 +1,9 @@
 import { transaction } from '../types';
 
-export const transactionsSortBy = (sortOption: string, transactions: transaction[]): transaction[] => {
+export const transactionsSortBy = (
+  sortOption: string,
+  transactions: transaction[]
+): transaction[] => {
   // We clone the array to avoid mutating the original input,
   // because Array.prototype.sort() sorts the array in place.
   let sortedArray = [...transactions];

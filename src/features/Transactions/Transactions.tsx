@@ -7,7 +7,8 @@ import { transactions } from './transactionsData';
 
 export const Transaction = () => {
   const [searchTransaction, setSearchTransaction] = useState('');
-  const [filteredTransactions, setFilteredTransactions] = useState(transactions);
+  const [filteredTransactions, setFilteredTransactions] =
+    useState(transactions);
   const [sortBy, setSortBy] = useState('latest'); // latest, oldest, az, za, highest, lowest
 
   /*************************/
@@ -50,7 +51,9 @@ export const Transaction = () => {
                   if (e.target.value === 'all') {
                     setFilteredTransactions(transactions);
                   } else {
-                    setFilteredTransactions(transactionsSortBy(e.target.value, filteredTransactions));
+                    setFilteredTransactions(
+                      transactionsSortBy(e.target.value, filteredTransactions)
+                    );
                   }
                 }}
               >
@@ -69,7 +72,9 @@ export const Transaction = () => {
                   if (e.target.value === 'all') {
                     setFilteredTransactions(transactions);
                   } else {
-                    setFilteredTransactions(selectedCategory(e.target.value, filteredTransactions));
+                    setFilteredTransactions(
+                      selectedCategory(e.target.value, filteredTransactions)
+                    );
                   }
                 }}
               >
@@ -106,9 +111,13 @@ export const Transaction = () => {
                     />
                     <p>{transaction.name}</p>
                   </div>
-                  <p className='transactions_category'>{transaction.category}</p>
+                  <p className='transactions_category'>
+                    {transaction.category}
+                  </p>
                   <p className='transaction_date'>{transaction.date}</p>
-                  <p className='transaction_amount'>{formatCurrency(transaction.amount)}</p>
+                  <p className='transaction_amount'>
+                    {formatCurrency(transaction.amount)}
+                  </p>
                 </div>
                 <hr className='transaction_table--horizontal-line'></hr>
               </>
