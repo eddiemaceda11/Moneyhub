@@ -4,12 +4,19 @@ import { formatCurrency } from '../../utils/formatters';
 import { transactionsSortBy } from './utils/transactionsSortBy';
 import { selectedCategory } from './utils/transactionsSelectedCategory';
 import { transactions } from './transactionsData';
+import { useEffect } from 'react';
 
 export const Transaction = () => {
   const [searchTransaction, setSearchTransaction] = useState('');
   const [filteredTransactions, setFilteredTransactions] =
     useState(transactions);
-  const [sortBy, setSortBy] = useState('latest'); // latest, oldest, az, za, highest, lowest
+  const [sortOption, setSortOption] = useState('latest'); // latest, oldest, az, za, highest, lowest
+  const [category, setCategory] = useState('all');
+  const [pagination, setPagination] = useState({ start: 0, end: 10 });
+
+  useEffect(() => {
+    searchForTransaction();
+  }, [sortOption, category]);
 
   /*************************/
   /*** Helper functions ****/
@@ -17,14 +24,44 @@ export const Transaction = () => {
   const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = event.target.value;
     setSearchTransaction(newValue);
-    console.log(newValue);
+  };
 
-    // Filter transactions based on the search input
-    const filtered = transactions.filter((transaction) => {
-      return transaction.name.toLowerCase().includes(newValue.toLowerCase());
-    });
+  const searchForTransaction = (): undefined => {
+    const searchedTransactions = transactions.filter((transaction) =>
+      transaction.name.includes(searchTransaction)
+    );
+    const sortedTransactions = transactionsSortBy(
+      sortOption,
+      searchedTransactions
+    );
+    const finalizedTransactions = selectedCategory(
+      category,
+      sortedTransactions
+    );
+    setFilteredTransactions(finalizedTransactions);
+  };
 
-    setFilteredTransactions(filtered);
+  const paginationCount = () => {
+    let countOfPaginationButtonsToRender = [];
+    const amountOfTotalPages = Math.round(filteredTransactions.length / 10);
+
+    console.log(amountOfTotalPages);
+
+    for (let i = 0; i < amountOfTotalPages; i++) {
+      countOfPaginationButtonsToRender.push(i + 1);
+    }
+
+    return countOfPaginationButtonsToRender;
+  };
+
+  const updateCurrentTransactionsRendered = (value) => {
+    const newValue = value - 1;
+    const newStartAsString = String(newValue) + '0';
+    const newStartAsNumber = Number(newStartAsString);
+    const newEnd = newStartAsNumber + 10;
+
+    console.log(newStartAsNumber, newEnd);
+    setPagination({ start: newStartAsNumber, end: newEnd });
   };
 
   return (
@@ -39,7 +76,12 @@ export const Transaction = () => {
               onChange={handleSearchChange}
               value={searchTransaction}
             />
-            <i className='fa-solid fa-magnifying-glass'></i>
+            <button
+              className='transactions_searchbar--button'
+              onClick={() => searchForTransaction()}
+            >
+              <i className='fa-solid fa-magnifying-glass'></i>
+            </button>
           </div>
           <div className='filters-container'>
             <div className='transactions_sort-by'>
@@ -48,13 +90,8 @@ export const Transaction = () => {
                 name=''
                 id=''
                 onChange={(e) => {
-                  if (e.target.value === 'all') {
-                    setFilteredTransactions(transactions);
-                  } else {
-                    setFilteredTransactions(
-                      transactionsSortBy(e.target.value, filteredTransactions)
-                    );
-                  }
+                  setSortOption(e.target.value);
+                  setPagination({ start: 0, end: 10 });
                 }}
               >
                 <option value='latest'>Latest</option>
@@ -69,13 +106,8 @@ export const Transaction = () => {
               <p>Category</p>
               <select
                 onChange={(e) => {
-                  if (e.target.value === 'all') {
-                    setFilteredTransactions(transactions);
-                  } else {
-                    setFilteredTransactions(
-                      selectedCategory(e.target.value, filteredTransactions)
-                    );
-                  }
+                  setCategory(e.target.value);
+                  setPagination({ start: 0, end: 10 });
                 }}
               >
                 <option value='all'>All Transactions</option>
@@ -100,29 +132,31 @@ export const Transaction = () => {
         {/* TRANSACTIONS TABLE */}
         <div className='transactions_table'>
           {/* INDIVIDUAL TRANSACTION */}
-          {filteredTransactions.map((transaction, index) => {
-            return (
-              <>
-                <div className='transactions_table--transaction'>
-                  <div className='recipient_sender'>
-                    <img
-                      src=''
-                      alt=''
-                    />
-                    <p>{transaction.name}</p>
+          {filteredTransactions
+            .slice(pagination.start, pagination.end)
+            .map((transaction, index) => {
+              return (
+                <>
+                  <div className='transactions_table--transaction'>
+                    <div className='recipient_sender'>
+                      <img
+                        src=''
+                        alt=''
+                      />
+                      <p>{transaction.name}</p>
+                    </div>
+                    <p className='transactions_category'>
+                      {transaction.category}
+                    </p>
+                    <p className='transaction_date'>{transaction.date}</p>
+                    <p className='transaction_amount'>
+                      {formatCurrency(transaction.amount)}
+                    </p>
                   </div>
-                  <p className='transactions_category'>
-                    {transaction.category}
-                  </p>
-                  <p className='transaction_date'>{transaction.date}</p>
-                  <p className='transaction_amount'>
-                    {formatCurrency(transaction.amount)}
-                  </p>
-                </div>
-                <hr className='transaction_table--horizontal-line'></hr>
-              </>
-            );
-          })}
+                  <hr className='transaction_table--horizontal-line'></hr>
+                </>
+              );
+            })}
         </div>
 
         {/* TRANSACTIONS TABLE NAVIGATION */}
@@ -133,11 +167,15 @@ export const Transaction = () => {
             </button>
           </div>
           <div className='transaction_nav--pages'>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>4</button>
-            <button>5</button>
+            {paginationCount().map((item) => (
+              <button
+                onClick={(e) =>
+                  updateCurrentTransactionsRendered(e.target.textContent)
+                }
+              >
+                {item}
+              </button>
+            ))}
           </div>
           <div className='transactions_nav--button-container'>
             <button>
