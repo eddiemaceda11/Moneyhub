@@ -49,6 +49,17 @@
   outline: none;
 }
 
+.transactions_searchbar--button {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .filters-container {
   display: flex;
   gap: 24px;
