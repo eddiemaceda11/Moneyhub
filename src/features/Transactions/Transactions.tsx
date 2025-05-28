@@ -10,8 +10,8 @@ export const Transaction = () => {
   const [searchTransaction, setSearchTransaction] = useState('');
   const [filteredTransactions, setFilteredTransactions] =
     useState(transactions);
-  const [sortOption, setSortOption] = useState('latest'); // latest, oldest, az, za, highest, lowest
-  const [category, setCategory] = useState('all');
+  const [sortOption, setSortOption] = useState('lowest'); // latest, oldest, az, za, highest, lowest
+  const [category, setCategory] = useState('All Transactions');
   const [pagination, setPagination] = useState({ start: 0, end: 10 });
 
   useEffect(() => {
@@ -38,6 +38,7 @@ export const Transaction = () => {
       category,
       sortedTransactions
     );
+    console.log(finalizedTransactions);
     setFilteredTransactions(finalizedTransactions);
   };
 
