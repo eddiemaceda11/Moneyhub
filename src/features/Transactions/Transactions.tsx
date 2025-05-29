@@ -38,15 +38,12 @@ export const Transaction = () => {
       category,
       sortedTransactions
     );
-    console.log(finalizedTransactions);
     setFilteredTransactions(finalizedTransactions);
   };
 
-  const paginationCount = () => {
+  const paginationCountButtons = () => {
     let countOfPaginationButtonsToRender = [];
     const amountOfTotalPages = Math.round(filteredTransactions.length / 10);
-
-    console.log(amountOfTotalPages);
 
     for (let i = 0; i < amountOfTotalPages; i++) {
       countOfPaginationButtonsToRender.push(i + 1);
@@ -55,13 +52,12 @@ export const Transaction = () => {
     return countOfPaginationButtonsToRender;
   };
 
-  const updateCurrentTransactionsRendered = (value) => {
+  const updateCurrentTransactionsRendered = (value: number) => {
     const newValue = value - 1;
     const newStartAsString = String(newValue) + '0';
     const newStartAsNumber = Number(newStartAsString);
     const newEnd = newStartAsNumber + 10;
 
-    console.log(newStartAsNumber, newEnd);
     setPagination({ start: newStartAsNumber, end: newEnd });
   };
 
@@ -192,13 +188,15 @@ export const Transaction = () => {
             </button>
           </div>
           <div className='transaction_nav--pages'>
-            {paginationCount().map((item) => (
+            {paginationCountButtons().map((paginationButton) => (
               <button
-                onClick={(e) =>
-                  updateCurrentTransactionsRendered(e.target.textContent)
-                }
+                onClick={(e: React.MouseEvent<HTMLButtonElement>) => {
+                  const target = e.target as HTMLElement;
+                  const paginationButtonValue = Number(target.textContent);
+                  updateCurrentTransactionsRendered(paginationButtonValue);
+                }}
               >
-                {item}
+                {paginationButton}
               </button>
             ))}
           </div>
