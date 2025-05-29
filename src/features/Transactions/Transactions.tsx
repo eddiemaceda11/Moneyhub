@@ -65,6 +65,30 @@ export const Transaction = () => {
     setPagination({ start: newStartAsNumber, end: newEnd });
   };
 
+  const handleNextOrPrevPagination = (direction: 'next' | 'prev') => {
+    const pageSize = 10;
+
+    if (direction === 'next') {
+      if (pagination.end >= filteredTransactions.length) return;
+      const newPaginationStart = pagination.start + pageSize;
+      const newPaginationEnd = pagination.end + pageSize;
+      setPagination({
+        start: newPaginationStart,
+        end: newPaginationEnd,
+      });
+    }
+
+    if (direction === 'prev') {
+      if (pagination.start < pageSize) return;
+      const newPaginationStart = pagination.start - pageSize;
+      const newPaginationEnd = pagination.end - pageSize;
+      setPagination({
+        start: newPaginationStart,
+        end: newPaginationEnd,
+      });
+    }
+  };
+
   return (
     <>
       <h1 className='transactions-title'>Transactions</h1>
@@ -163,7 +187,7 @@ export const Transaction = () => {
         {/* TRANSACTIONS TABLE NAVIGATION */}
         <div className='transactions_table--navigation'>
           <div className='transactions_nav--button-container'>
-            <button>
+            <button onClick={() => handleNextOrPrevPagination('prev')}>
               <span>←</span> Prev
             </button>
           </div>
@@ -179,7 +203,7 @@ export const Transaction = () => {
             ))}
           </div>
           <div className='transactions_nav--button-container'>
-            <button>
+            <button onClick={() => handleNextOrPrevPagination('next')}>
               Next <span>→</span>
             </button>
           </div>
