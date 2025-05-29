@@ -73,9 +73,12 @@ Welcome to the MoneyHub internal documentation index. Use this as a guide to qui
 
 ## 📊 Data Visualization
 
-| Chart            | File                          |
-| ---------------- | ----------------------------- |
-| Budget Pie Chart | `OverviewBudgetsPieChart.tsx` |
+| Chart            | File                          | Library |
+| ---------------- | ----------------------------- | ------- |
+| Budget Pie Chart | `OverviewBudgetsPieChart.tsx` | None    |
+|                  |                               |         |
+|                  |                               |         |
+|                  |                               |         |
 
 ---
 
