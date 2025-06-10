@@ -1,0 +1,255 @@
+.budgets-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 56px;
+}
+
+/* w: 1060px */
+
+.budgets-header h1 {
+  width: 128px;
+  color: var(--color-grey-900);
+  font-size: 32px;
+  line-height: 120%;
+}
+
+.budgets-header button {
+  width: 154px;
+  height: 53px;
+  color: var(--color-p-white);
+  font-size: 14px;
+  line-height: 150%;
+}
+
+/* CONTENT BODY */
+.budgets_content--container {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  height: auto; /* will expand bases on its own chidlren content*/
+  /* border: 1px solid red; */
+}
+
+.budgets-graph {
+  width: 428px;
+  min-width: 428px;
+  height: 599px;
+  background-color: black;
+}
+
+.budgets_categories--container {
+  width: 608px;
+  width: 57.36%;
+  height: 2112px;
+  /* border: 1px solid brown; */
+}
+
+.budgets_categories--container-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: 510px;
+  padding: 32px;
+  background-color: var(--color-p-white);
+  border-radius: 12px;
+  /* border: 1px solid purple; */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  /* width: 544px; */
+  width: 100%;
+  height: 24px;
+  /* border: 1px solid blue; */
+}
+
+.header-container-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 316px;
+  width: 58.09%;
+  height: 100%;
+}
+
+.category-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color-dark-green);
+}
+
+.header-container-left p {
+  width: 139px;
+  height: 24px;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: var(--font-bold);
+}
+
+.header-container img {
+  width: 16px;
+  height: 16px;
+  margin-left: auto;
+}
+
+.budget-bar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  height: 128px;
+  /* border: 1px solid red; */
+}
+
+.maximum-container {
+  width: 100%;
+  height: 21px;
+  /* border: 1px solid blue; */
+}
+
+.maximum-container p {
+  text-align: start;
+}
+
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  width: 100%;
+  height: 32px;
+  background-color: var(--primary-bg-beige);
+}
+
+.progress-bar {
+  width: 40%;
+  height: 24px;
+  background-color: var(--color-dark-green);
+  border-radius: 4px;
+}
+
+.spent-remaining-container {
+  display: flex;
+  gap: 16px;
+  flex: 1 1;
+  width: 100%;
+  height: 43px;
+  /* border: 1px solid brown; */
+}
+
+.spent-container {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  /* border: 1px solid red; */
+  flex: 1;
+  background-color: var(--color-p-white);
+}
+
+.spent-amt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4px;
+  width: 100%;
+}
+
+.spent-amt-container span {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-grey-500);
+}
+
+.spent-amt-container p {
+  font-size: 14px;
+  font-weight: var(--font-bold);
+  line-height: 150%;
+  color: var(--color-grey-900);
+}
+
+.remaining-container {
+  display: flex;
+  gap: 16px;
+  height: 100%;
+  /* border: 1px solid red; */
+  flex: 1;
+  background-color: var(--color-p-white);
+}
+
+.remaining-amt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4px;
+  width: 100%;
+}
+
+.remaining-amt-container span {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-grey-500);
+}
+
+.remaining-amt-container p {
+  font-size: 14px;
+  font-weight: var(--font-bold);
+  line-height: 150%;
+  color: var(--color-grey-900);
+}
+
+.bar {
+  width: 4px;
+  height: 100%;
+  border-radius: 8px;
+  background-color: var(--color-dark-green);
+}
+
+.bar-remaining {
+  width: 4px;
+  height: 100%;
+  border-radius: 8px;
+  background-color: var(--primary-bg-beige);
+}
+
+.latest-spending-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  height: 254px;
+  background-color: var(--primary-bg-beige);
+}
+
+.latest-spending-header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 24px;
+}
+
+.latest-spending-header-container p {
+  flex: 1;
+  height: 100%;
+  /* display: flex; */
+  font-size: 16px;
+  font-weight: var(--font-bold);
+  line-height: 150%;
+  color: var(--color-grey-900);
+  text-align: start;
+}
+
+.latest-spending-header-container div {
+  flex: 1;
+  /* display: flex; */
+  font-size: 16px;
+  font-weight: var(--font-bold);
+  line-height: 150%;
+  color: var(--color-grey-900);
+}

@@ -1,0 +1,26 @@
+.tablet-sidebar {
+  /* width: 375px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  background-color: black;
+}
+
+.tablet-sidebar_nav--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 343px;
+}
+
+.tablet-sidebar_nav--container a {
+  width: 60%;
+}
+
+.tablet-sidebar_nav--item {
+  /* width: 100%; */
+  /* width: 68.6px; */
+  width: 60%;
+}

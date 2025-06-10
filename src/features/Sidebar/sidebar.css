@@ -5,8 +5,8 @@
   gap: 24px;
   padding-bottom: 24px;
   background-color: var(--color-grey-900);
-  border-top-right-radius: 14px;
-  border-bottom-right-radius: 14px;
+  /* border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px; */
   transition: width 0.3s ease-in-out;
 }
 
@@ -100,7 +100,7 @@ footer img {
   transform: rotate(180deg);
 }
 
-@media (max-width: 1438px) {
+@media (max-width: 820px) {
   .sidebar {
     width: 88px;
   }

@@ -1,0 +1,26 @@
+.mobile-sidebar {
+  /* width: 375px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  background-color: black;
+}
+
+.mobile-sidebar_nav--container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 343px;
+}
+
+.mobile-sidebar_nav--container a {
+  width: 60%;
+}
+
+.mobile-sidebar_nav--item {
+  /* width: 100%; */
+  /* width: 68.6px; */
+  /* width: 60%; */
+}
