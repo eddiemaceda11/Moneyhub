@@ -48,6 +48,16 @@ export const Budgets = () => {
                 <p>Latest Spending</p>
                 <div>
                   <span>See All</span>
+                  <p>→</p>
+                </div>
+              </div>
+              <div className='latest-spending-body'>
+                <div className='budget-transaction-container'>
+                  <div className='budget-transaction-container-left'>
+                    <img></img>
+                    <p>Eddie Maceda</p>
+                  </div>
+                  <div className='budget-transaction-container-right'></div>
                 </div>
               </div>
             </div>
