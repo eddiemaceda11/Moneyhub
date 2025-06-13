@@ -246,10 +246,55 @@
 }
 
 .latest-spending-header-container div {
-  flex: 1;
-  /* display: flex; */
+  /* flex: 1; */
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* width: 71px; */
+  width: 75px;
   font-size: 16px;
   font-weight: var(--font-bold);
   line-height: 150%;
   color: var(--color-grey-900);
+}
+
+.latest-spending-header-container div {
+  font-size: 14px;
+  font-weight: var(--font-regular);
+  line-height: 150%;
+  color: var(--color-grey-500);
+}
+
+.latest-spending-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  height: 170px;
+  border: 1px solid red;
+}
+
+.budget-transaction-container {
+  width: 100%;
+  height: 40px;
+  border: 1px solid brown;
+}
+
+.budget-transaction-container-left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: red;
+}
+
+.budget-transaction-container-left img {
+  width: 32px;
+  height: 32px;
+  background-color: grey;
+}
+
+.budget-transaction-container-left p {
+}
+
+.budget-transaction-container-right {
 }
