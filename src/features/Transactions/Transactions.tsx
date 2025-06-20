@@ -104,7 +104,7 @@ export const Transaction = () => {
     }
   };
 
-  const paginationLogicForMobileNav = (num) => {
+  const paginationLogicForMobileNav = (num: number) => {
     if (num < 3) return num;
 
     if (num === 3 && filteredTransactions.length > 4) return '...';
@@ -189,7 +189,7 @@ export const Transaction = () => {
           {/* INDIVIDUAL TRANSACTION */}
           {filteredTransactions
             .slice(pagination.start, pagination.end)
-            .map((transaction, index) => {
+            .map((transaction) => {
               return (
                 <>
                   <div className='transactions_table--transaction'>
@@ -314,7 +314,7 @@ export const Transaction = () => {
           {/* INDIVIDUAL TRANSACTION */}
           {filteredTransactions
             .slice(pagination.start, pagination.end)
-            .map((transaction, index) => {
+            .map((transaction) => {
               return (
                 <>
                   <div className='transactions_table--transaction'>

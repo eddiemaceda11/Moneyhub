@@ -14,17 +14,27 @@ export const Budgets = () => {
             <div
               className='budgets-outer-graph'
               style={{
-                background: `conic-gradient(#3bd1f6 ${30}%, #e5e7eb ${30}% 85%, red 85%)`,
+                background: `conic-gradient(var(--color-dark-green) ${30}%, var(--color-cyan) ${30}% 85%, var( --color-yellow) 85%)`,
                 borderRadius: '50%',
                 clipPath: 'circle(50% at 50% 50%)',
               }}
             >
               <div className='budgets-middle-graph'>
-                <div className='budgets-inner-graph'></div>
+                <div className='budgets-inner-graph'>
+                  <div className='graph-details'>
+                    <div className='graph-details-top'>$338</div>
+                    <div className='graph-details-bottom'>of $975 limit</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className='budgets-spending'></div>
+          <div className='budgets-spending'>
+            <header className='budgets-spending-header'>
+              Spending Summary
+            </header>
+            <div className='budgets-spending-categories'></div>
+          </div>
         </div>
         <div className='budgets_categories--container'>
           <div className='budgets_categories--container-item'>

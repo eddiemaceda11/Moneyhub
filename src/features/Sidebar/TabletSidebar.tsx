@@ -4,7 +4,7 @@ import sidebarTransactionsIcon from '/images/icon-nav-transactions.svg';
 import sidebarBudgetsIcon from '/images/icon-nav-budgets.svg';
 import sidebarPotsIcon from '/images/icon-nav-pots.svg';
 import sidebarRecurringBillsIcon from '/images/icon-nav-recurring-bills.svg';
-import sidebarMinimizeMenuIcon from '/images/icon-minimize-menu.svg';
+// import sidebarMinimizeMenuIcon from '/images/icon-minimize-menu.svg';
 import { Link } from 'react-router';
 
 export const TabletSidebar = () => {
