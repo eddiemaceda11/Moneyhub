@@ -33,7 +33,18 @@ export const Budgets = () => {
             <header className='budgets-spending-header'>
               Spending Summary
             </header>
-            <div className='budgets-spending-categories'></div>
+            <div className='budgets-spending-categories'>
+              <div className='budgets-spending-category-item'>
+                <div className='budgets-spending-category-item-left-container'>
+                  <div></div>
+                  <p>Entertainment</p>
+                </div>
+                <div className='budgets-spending-category-item-right-container'>
+                  <p>$15.00</p>
+                  <p>of $50.00</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className='budgets_categories--container'>
